@@ -1,3 +1,11 @@
+##Cyclistic Bike Share Analysis  Analysis Phase  SQL
+
+ Ready to uncover actionable insights? Join us in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
+
+In this video, we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
+
+Subscribe now to elevate your analytical capabilities and stay abreast of the final stages of the Capstone Project. Let's navigate the world of data together! 
+
 Ford GoBike Data Exploration
 Dataset
  I Use Cyclistic’s historical trip data to analyze and identify trends.e Cyclistic
