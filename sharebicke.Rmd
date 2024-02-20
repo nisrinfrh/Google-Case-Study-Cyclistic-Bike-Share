@@ -4,7 +4,8 @@ author: "nisrin"
 date: "2024-02-20"
 output: html_document
 ---
-
+#setting up my environment
+##setting up my environment by loading tidyverse backeges 
 library(tidyverse)  #helps wrangle data
 # Use the conflicted package to manage conflicts
 library(conflicted)
@@ -17,9 +18,9 @@ conflict_prefer("lag", "dplyr")
 # STEP 1: COLLECT DATA
 #=====================
 # # Upload Divvy datasets (csv files) here
-q1_2019 <- read_csv("Divvy_Trips_2019_Q1.csv")
+```{r}
 q1_2020 <- read_csv("Divvy_Trips_2020_Q1.csv")
-
+```
 
 #====================================================
 # STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
