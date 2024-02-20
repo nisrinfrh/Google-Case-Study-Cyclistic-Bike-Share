@@ -17,35 +17,19 @@ conflict_prefer("lag", "dplyr")
 #=====================
 # STEP 1: COLLECT DATA
 #=====================
+
 # # Upload Divvy datasets (csv files) here
-```{r}
-q1_2020 <- read_csv("Divvy_Trips_2020_Q1.csv")
-```
+
+##q1_2020 <- read_csv("Divvy_Trips_2020_Q1.csv")
+
 
 #====================================================
-# STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
+# STEP 2: WRANGLE DATA 
 #====================================================
-# Compare column names each of the files
-# While the names don't have to be in the same order, they DO need to match perfectly before we can use a command to join them into one file
-colnames(q1_2019)
-colnames(q1_2020)
 
-# Rename columns  to make them consistent with q1_2020 (as this will be the supposed going-forward table design for Divvy)
-
-(q1_2019 <- rename(q1_2019
-                   ,ride_id = trip_id
-                   ,rideable_type = bikeid
-                   ,started_at = start_time
-                   ,ended_at = end_time
-                   ,start_station_name = from_station_name
-                   ,start_station_id = from_station_id
-                   ,end_station_name = to_station_name
-                   ,end_station_id = to_station_id
-                   ,member_casual = usertype
-))
 
 # Inspect the dataframes and look for incongruencies
-str(q1_2019)
+##str(q1_2019)
 
 
 # Convert ride_id and rideable_type to character so that they can stack correctly
