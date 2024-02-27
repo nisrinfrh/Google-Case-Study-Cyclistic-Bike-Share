@@ -1,36 +1,40 @@
-##Cyclistic Bike Share Analysis  Analysis Phase  SQL
+#Cyclistic Bike Share Analysis 
 
  Ready to uncover actionable insights? Join us in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
 
-In this video, we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
+In this case study , we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
 
-Subscribe now to elevate your analytical capabilities and stay abreast of the final stages of the Capstone Project. Let's navigate the world of data together! 
 
-Ford GoBike Data Exploration
-Dataset
+##Dataset
  I Use Cyclistic’s historical trip data to analyze and identify trends.e Cyclistic
 is a fictional company. For the purposes of this case study, the datasets are appropriate and
 will enable me to answer the business questions. The data has been made available by
-Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.) This is public data that I used to explore
+Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
 
-Tools
-Excel - Data Cleaning
-Download here
-SQL Server - Data Analysis
-PowerBI - Creating reports
+##Tools
+.Excel - Data Cleaning
+.R - Data Analysis
+.PowerBI - Creating reports
+
+**Limitations**
+I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
+I had to remove some columes i dont need in my analysis
+#BUSINESS QUESTIONS
+1- How do casual and  member riders use Cyclistic Bike Share diferently.
+2- Why would casual rides buy annual Cyclistic  memberships.
+3-How can Cyclistic use digital media to influence casual riders to become members.
+#STEP 1
 
 Data Cleaning/Preparation
 
-In the initial data preparation phase, we performed the following tasks:
+In the initial data preparation phase, Iperformed the following tasks:
 
 Data loading and inspection.
 Handling missing values.
 Data cleaning and formatting.
 Exploratory Data Analysis
-EDA involved exploring the sales data to answer key questions, such as:
-how different customer types are using Cyclistic bikes.
-**Limitations**
-I had to remove all zero values from budget and revenue columns because they would have affected the accuracy of my conclusions from the analysis. There are still a few outliers even after the omissions but even then we can still see that there is a positive correlation between both budget and number of votes with revenue.
+
+
 
 
 Summary of Findings
