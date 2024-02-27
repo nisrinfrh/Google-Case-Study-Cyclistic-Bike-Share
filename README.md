@@ -1,17 +1,17 @@
-#Cyclistic Bike Share Analysis 
+# Cyclistic Bike Share Analysis 
 
  Ready to uncover actionable insights? Join us in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
 
 In this case study , we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
 
 
-##Dataset
+## Dataset
  I Use Cyclistic’s historical trip data to analyze and identify trends.e Cyclistic
 is a fictional company. For the purposes of this case study, the datasets are appropriate and
 will enable me to answer the business questions. The data has been made available by
 Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
 
-##Tools
+## Tools
 .Excel - Data Cleaning
 .R - Data Analysis
 .PowerBI - Creating reports
@@ -19,11 +19,12 @@ Motivate International Inc. under this license (https://www.divvybikes.com/data-
 **Limitations**
 I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
 I had to remove some columes i dont need in my analysis
-#BUSINESS QUESTIONS
+
+# BUSINESS QUESTIONS
 1- How do casual and  member riders use Cyclistic Bike Share diferently.
 2- Why would casual rides buy annual Cyclistic  memberships.
 3-How can Cyclistic use digital media to influence casual riders to become members.
-#STEP 1
+# STEP 1
 
 Data Cleaning/Preparation
 
