@@ -1,6 +1,7 @@
 # Cyclistic Bike Share Analysis 
 
  Ready to uncover actionable insights? Join us in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
+ In this case study I will be analyzing a public dataset for a fictional company provided by the course
 
 In this case study , we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
 
@@ -30,7 +31,8 @@ Data Cleaning/Preparation
 
 In the initial data preparation phase, Iperformed the following tasks:
 
-Data loading and inspection.
+- Download data and store it appropriately.
+Data has been downloaded and copies have been stored securely on my computer.
 Handling missing values.
 Data cleaning and formatting.
 Exploratory Data Analysis
@@ -57,17 +59,12 @@ Interestingly enough though was discovering that customers covered more distance
 The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
 An analysis of the relationship between age of the users and the distance covered shows that the longest and shortest rides fluctuate between the older users who are above 70 years of age.
 
-Most female customers start their rides at 1700h followed by 0800h and 1300h and 1600h
-Most male customers start their rides at 1700h followed by 1600h and 0800h.
-Most customers who identify as other start their rides at 1700h and 0800h
-Most female subscribers start their rides at 0800h followed by 1700h and 0900h and 1800h
-Most male subscribers start their rides at 1700h followed by 0800h and 0900h.
+
 Most subscribers who identify as other start their rides at 1700h followed by 1800h and 0800h
-Most users from both categories aged 34 years preferred to ride on Thursdays at 1700h.
-Male customers prefer to ride on Thursdays and Fridays while female customers prefer to ride on Thursday and Sunday. Customers who identify as other prefer to ride on Thursdays and Fridays while subscribers of the same category prefer to ride on Wednesdays and Thursdays.
+Most users from both categories preferred to ride on Thursdays at 1700h.
 
 Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their gender, user category and age. I start by plotting a pie chart showing the gender distribution of the users followed by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.
+For the presentation, I focus on the usage of the service by users according to their user category . I start by plotting a pie chart showing the Ride type distribution of the users followed by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.
 
 image
 
@@ -125,3 +122,78 @@ I had to remove all zero values from budget and revenue columns because they wou
 
 References
 SQL for Businesses by werty.
+A. Business task:
+Guiding questions
+
+What is the problem you are trying to solve?
+
+This analysis is a part of the bigger problem containing 3 guiding questions.
+
+How do annual members and casual riders use Cyclistic bikes differently?
+
+Why would casual riders buy Cyclistic annual memberships?
+
+How can Cyclistic use digital media to influence casual riders to become members?
+
+This analysis is mainly to solve the first question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce a report with the following deliverable.
+
+A. A clear statement of the business task
+
+B. A description of all data sources used
+
+C. Documentation of any cleaning or manipulation of data
+
+D. A summary of the analysis
+
+E. Supporting visualizations and key findings
+
+F. My top three recommendations based on the analysis
+Step 2: Prepare
+B. A description of all data sources used.
+Where is the data located? The data is located and stored in Amazon web server and is owned (first-party) by Cyclistic.
+
+How is the data organized? Data is kept in csv with 13 columns and 5.5M rows combined (for year 2021). start coordinates are complete but the end coordinates has quite a few NULL values. The data needs to be geo-spacitally mapped to round-off the area which inturn gives the station name even if not available.
+
+Are there issues with bias or credibility in this data? Does your data ROCCC? The data seems to fit the definition of ROCCC. Let us elaborate:
+
+Reliable -Yes, the data is reliable as it is directly downloaded from the company’s servers. The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most recent and complete data which is 2021.
+
+Original -Yes, the data is collected and owned by Cyclistic.
+
+Comprehensive -The data as stated earlier is a collection from 2013 till present. We have enough data to work with given the huge historical data.
+
+Current - The data is regularly updated by the geotrackers in the bikes. So the data satisfies this property.
+
+Cited -no citing needed as the data is collected and owned by the companyCyclistic itself.
+
+How are you addressing licensing, privacy, security, and accessibility? The Raw data is downloaded and kept in my laptop and will not be shared by any means and processed data will only be displayed as tables, tibbles and visualization.
+
+How did you verify the data’s integrity? The identification of missing values ( start/end station names and their ID’s) are all identifiable given the coordinates which can be rounded off the station’s name and ID can be recovered.
+
+How does it help you answer your question?The data provided can help me answer the underlying question earlier stated “How do annual members and casual riders use Cyclistic bikes differently?” using the following metrics of most used ride, usage behavior and most used stations for start and stop.
+
+Are there any problems with the data?Data for around 500k/5.5M transactions is missing(start/end station name, Id’s), the challenge for me as an analyst will be either complete this data or consider the data which is complete. Considering the huge size of the data, i will be making analysis from the data available informing the stakeholders about the same to maintain transparency.
+
+Step 3 & 4: Process & Analyse
+Following are the steps in cleaning and manipulating the data
+
+Firstly, we will use excel to clean and transform the data.So, these were the steps used: + Join the data to make one data frame + save it in a separate spreadsheet. + add two columns (i.e. ride_length and week_day) and calculate its values. + add filters to the headers and filter end_lat with empty cells. Select all the visible cells and delete them. + delete rows with negative values in ride length. + find answers to the following values using formulas in excel. Here are the results.
+
+mode_weekday 7
+mean_ride_length 00:15:37
+max_ride_length 23:47:38
+members_average_ride_length 00:13:21
+casual_average_ride_length 00:25:04
+
+no_of_rides_on_Sunday 17078
+no_of_rides_on_Monday 17757 no_of_rides_on_Tuesday 19154 no_of_rides_on_Wednesday 20987 no_of_rides_on_Thursday 21354 no_of_rides_on_Friday 23519 no_of_rides_on_Saturday 26289
+
+most_rides_week 26289 Saturday least_rides_week 17078 Sunday
+
+Start loading the file in R studio for further visualization and analysis.
+Key takeaways
+Average ride length by customer type and day of the week: Length of the rides of Causal riders is 40% more than that of the Members.
+
+Biketype used by each type of subcribers and casual riders Clasic bikes are No#1 in demand and electric bikes. Demand for docked bikes is very insignificant compared to the two.
+
+Total rides analysis by weekday Causal riders use the service for leisure and members use it to mainly commute.
