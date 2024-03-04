@@ -19,7 +19,8 @@ Motivate International Inc. under this license (https://www.divvybikes.com/data-
 
 **Limitations**
 I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
-I had to remove some columes i dont need in my analysis
+I had to remove some columes i dont need in my analysis.
+Ihad to delete rows with negative values in duration column. 
 
 # BUSINESS QUESTIONS
 1- How do casual and  member riders use Cyclistic Bike Share diferently.
