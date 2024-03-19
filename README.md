@@ -1,9 +1,9 @@
 # Cyclistic Bike Share Analysis 
 
- Ready to uncover actionable insights? Join us in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
- In this case study I will be analyzing a public dataset for a fictional company provided by the course
+ Hi, Join me in the Analyze phase of the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
+ In this case study I will be analyzing a public dataset for a fictional company provided by the course.
 
-In this case study , we delve deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying your skills in interpreting and presenting data.
+In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying  our skills in interpreting and presenting data.
 
 
 ## Dataset
@@ -13,9 +13,8 @@ will enable me to answer the business questions. The data has been made availabl
 Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
 
 ## Tools
-.Excel - Data Cleaning
-.R - Data Analysis
-.PowerBI - Creating reports
+. R - Data Analysis
+. PowerBI - Creating reports
 
 **Limitations**
 I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
@@ -26,19 +25,25 @@ Ihad to delete rows with negative values in duration column.
 1- How do casual and  member riders use Cyclistic Bike Share diferently.
 2- Why would casual rides buy annual Cyclistic  memberships.
 3-How can Cyclistic use digital media to influence casual riders to become members.
+ For this project ,I will focouse on the first busnis question and then i will do the second and thierd one.
 # STEP 1
 
-Data Cleaning/Preparation
+##Data Preparation
 
 In the initial data preparation phase, Iperformed the following tasks:
 
-- Download data and store it appropriately.
-Data has been downloaded and copies have been stored securely on my computer.
+Data has been downloaded(12 Csv files) and copies have been stored securely on my computer.
+The 12 downloaded  Csv files were merged into a master Data named *all_trips*
 Handling missing values.
 Data cleaning and formatting.
 Exploratory Data Analysis
 
+##Data Processing
+R  @ RStudio was used as the data processing tool. the master data was fed into the software as a data sourse and transfomed .
 
+##Data Analysis 
+
+the analysis was performed using RStuio 
 
 
 Summary of Findings
