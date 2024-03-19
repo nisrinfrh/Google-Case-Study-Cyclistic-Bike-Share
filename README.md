@@ -33,7 +33,7 @@ to analyze the differences in bike usage between casual riders and annual member
 
 ## Data Preparation
 
-In the initial data preparation phase, Iperformed the following tasks:
+I use primary source data downloaded from Cyclistic;s internal data mwhich is made available by divvy open source data.The available data will allow for examination of differences between user types, but not identification of underlying reasons.
 
 Data has been downloaded(12.Csv files were downloaded from 1 jan 2020 to 31 Dec 2020) and copies have been stored securely on my computer.
 these files were import to R Studio using read_csv function .The 12 downloaded  Csv files were merged into a master Data named *all_trips*
@@ -46,6 +46,7 @@ these files were import to R Studio using read_csv function .The 12 downloaded  
  Exploratory Data Analysis
 
 ##Data Analysis 
+Data has been cleaned and now we will move toward the analysis process
 
 the analysis was performed using RStuio 
 
@@ -54,12 +55,11 @@ Summary of Findings
 
 In the exploration, I found that
 
-Male users encompassed 75% of all users, female users 23%.
+
 The bike share service is also quite popular with the users as it has 91% of them as subscribers.
-Most users of the service are between 30 and 40 years old with the youngest being 21 years and the oldest being 95 years after cleaning the data.
 The day with the most rides is Thursday followed closely by Tuesday, Wednesday and Friday. The days with the lowest rides are Sunday and Saturday.
 Most users prefer to start their rides at 0800h and 1700h followed by 1800h and 0900h.
-To measure the distance coverd by the users, I created a column for distance in kilometers, based on the longitude and latitude start and end points.It was clear from the distance covered by the users that most of them could only manage an average of 1.5km. The longest distance covered was 63km.
+
 Most rides last an average of 11 minutes and most people don't go beyond 13 minutes.The longest ride is 1409 minutes which is about 23 hours
 I went on to look at how subscribers use the service compared to the customers. The analysis indicates that
 
@@ -67,7 +67,6 @@ Customers use the service mostly on Thursday, Friday, Sunday, Monday and Tuesday
 Subscribers mostly start their rides at 1700h and 0800h which could indicate they use it to go to work in the morning and back home in the evening while customers mostly start their rides at 1700h
 Interestingly enough though was discovering that customers covered more distance than the subscribers which in my opinion confirms that subscribers use it for commuting to work because the usage decreases significantly on weekends while customers use it for work and other activities perhaps.
 The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
-An analysis of the relationship between age of the users and the distance covered shows that the longest and shortest rides fluctuate between the older users who are above 70 years of age.
 
 
 Most subscribers who identify as other start their rides at 1700h followed by 1800h and 0800h
@@ -89,61 +88,10 @@ This data analysis project aims to provide insights into the sales performance o
 
 bar plot
 
-Data Sources
-Sales Data: The primary dataset used for this analysis is the ".csv" file, containing detailed information about each sale made by the company.
 
-Tools
-Excel - Data Cleaning
-Download here
-SQL Server - Data Analysis
-PowerBI - Creating reports
-Data Cleaning/Preparation
-In the initial data preparation phase, we performed the following tasks:
 
-Data loading and inspection.
-Handling missing values.
-Data cleaning and formatting.
-Exploratory Data Analysis
-EDA involved exploring the sales data to answer key questions, such as:
 
-What is the overall sales trend?
-Which products are top sellers?
-What are the peak sales periods?
-Data Analysis
-Include some interesting code/features worked with
 
-SELECT * FROM table1
-WHERE cond = 2;
-Results/Findings
-The analysis results are summarized as follows:
-
-The company's sales have been steadily increasing over the past year, with a noticeable peak during the holiday season.
-Product Category A is the best-performing category in terms of sales and revenue.
-Customer segments with high lifetime value (LTV) should be targeted for marketing efforts.
-Recommendations
-Based on the analysis, we recommend the following actions:
-
-Invest in marketing and promotions during peak sales seasons to maximize revenue.
-
-Focus on expanding and promoting products in Category A.
-Implement a customer segmentation strategy to target high-LTV customers effectively.
-Limitations
-I had to remove all zero values from budget and revenue columns because they would have affected the accuracy of my conclusions from the analysis. There are still a few outliers even after the omissions but even then we can still see that there is a positive correlation between both budget and number of votes with revenue.
-
-References
-SQL for Businesses by werty.
-A. Business task:
-Guiding questions
-
-What is the problem you are trying to solve?
-
-This analysis is a part of the bigger problem containing 3 guiding questions.
-
-How do annual members and casual riders use Cyclistic bikes differently?
-
-Why would casual riders buy Cyclistic annual memberships?
-
-How can Cyclistic use digital media to influence casual riders to become members?
 
 This analysis is mainly to solve the first question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce a report with the following deliverable.
 
@@ -205,5 +153,8 @@ Key takeaways
 Average ride length by customer type and day of the week: Length of the rides of Causal riders is 40% more than that of the Members.
 
 Biketype used by each type of subcribers and casual riders Clasic bikes are No#1 in demand and electric bikes. Demand for docked bikes is very insignificant compared to the two.
+####draaaaffft 
+
+To measure the distance coverd by the users, I created a column for distance in kilometers, based on the longitude and latitude start and end points.It was clear from the distance covered by the users that most of them could only manage an average of 1.5km. The longest distance covered was 63km.
 
 Total rides analysis by weekday Causal riders use the service for leisure and members use it to mainly commute.
