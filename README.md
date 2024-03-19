@@ -27,6 +27,9 @@ Ihad to delete rows with negative values in duration column.
 3-How can Cyclistic use digital media to influence casual riders to become members.
  For this project ,I will focouse on the first busnis question and then i will do the second and thierd one.
 
+## BUSINES Task
+Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims 
+to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily Morenothe director of marketing, and supported by Cyclistic;s markiting analytics team,this project will collect analyze and report data to guide the company;smarketing strategy.
 
 ## Data Preparation
 
