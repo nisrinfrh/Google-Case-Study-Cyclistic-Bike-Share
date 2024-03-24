@@ -4,7 +4,6 @@ author: "nisrin"
 date: "2024-02-20"
 output: html_document
 ---
-# setting up my environment
 ## setting up my environment by loading tidyverse backeges 
 library(tidyverse)  #helps wrangle data
 # Use the conflicted package to manage conflicts
@@ -13,23 +12,36 @@ library(conflicted)
 # Set dplyr::filter and dplyr::lag as the default choices
 conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
-# =====================
+
 # STEP 1: COLLECT DATA
-# =====================
 
 ## Upload Divvy datasets (csv files) here
 
 q1_2020 <- read_csv("Divvy_Trips_2020_Q1.csv")
 
+q1_2020 <- read_csv("
 
-#====================================================
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+q1_2020 <- read_csv
+
+
+
 # STEP 2: WRANGLE DATA 
-#====================================================
 
 
 # Inspect the dataframes and look for incongruencies
 ## str(q1_2019)
-
 
 # Convert ride_id and rideable_type to character so that they can stack correctly
 q1_2020 <-  mutate(q1_2020, ride_id = as.character(ride_id)
@@ -41,18 +53,14 @@ all_trips <- all_trips %>%
   select(-c(start_lat, start_lng, end_lat, end_lng))
 
 
-
-# ======================================================
 # STEP 3: CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
-# ======================================================
 
 # Inspect the new table that has been created
-colnames(all_trips)  #List of column names
-nrow(all_trips)  #How many rows are in data frame?
-dim(all_trips)  #Dimensions of the data frame?
-head(all_trips)  #See the first 6 rows of data frame.  Also tail(all_trips)
-str(all_trips)  #See list of columns and data types (numeric, character, etc)
-summary(all_trips)  #Statistical summary of data. Mainly for numerics
+colnames(all_trips) 
+nrow(all_trips) 
+str(all_trips)  
+ #Statistical summary of data. Mainly for numerics
+summary(all_trips) 
 
 # There are a few problems we will need to fix:
 
