@@ -71,6 +71,7 @@ the analysis was performed using R code
 ![Screenshot (137)](https://github.com/nisrinfrh/google_project/assets/157531427/0522f602-1584-4a6d-bca9-a3ae9a6772ba)
 
 #####analyze ridership data by type and weekday
+*#calculates the number of rides and average duration*
 
 ![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
 
