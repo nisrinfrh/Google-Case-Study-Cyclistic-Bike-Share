@@ -57,15 +57,16 @@ Data has been cleaned and now we will move toward the analysis process
 
 the analysis was performed using R code 
 
- **CONDUCT DESCRIPTIVE ANALYSIS**
-*Descriptive analysis on ride_length (all figures in seconds)*
+ **CONDUCT DESCRIPTIVE ANALYSIS  on *ride_length (all figures in seconds)***
 
 #####Summary of ride_length:_
 
 ![Screenshot (134)](https://github.com/nisrinfrh/google_project/assets/157531427/351f8af9-00f5-4bcc-b950-2b36526adc39)
 
- #####Compare members and casual users:_
-![Screenshot (135)](https://github.com/nisrinfrh/google_project/assets/157531427/dd3f856d-bb6c-4137-8e95-7dbe70a9a056)
+#####Compare members and casual users:_
+  ![Screenshot (135)](https://github.com/nisrinfrh/google_project/assets/157531427/dd3f856d-bb6c-4137-8e95-7dbe70a9a056)
+  
+####See the average ride time by each day for members vs casual users:
 
 Summary of Findings
 
