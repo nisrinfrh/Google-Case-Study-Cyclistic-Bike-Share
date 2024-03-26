@@ -72,6 +72,8 @@ the analysis was performed using R code
 
 #####analyze ridership data by type and weekday
 
+![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
+
 Summary of Findings
 
 In the exploration, I found that
