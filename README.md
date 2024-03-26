@@ -60,6 +60,7 @@ the analysis was performed using R code
  **CONDUCT DESCRIPTIVE ANALYSIS**
 *Descriptive analysis on ride_length (all figures in seconds)*
 
+![Screenshot (134)](https://github.com/nisrinfrh/google_project/assets/157531427/351f8af9-00f5-4bcc-b950-2b36526adc39)
 
 Summary of Findings
 
