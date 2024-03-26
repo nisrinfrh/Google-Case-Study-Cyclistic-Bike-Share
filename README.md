@@ -38,12 +38,13 @@ I use primary source data downloaded from Cyclistic;s internal data mwhich is ma
 Data has been downloaded(12.Csv files were downloaded from 1 jan 2020 to 31 Dec 2020) and copies have been stored securely on my computer.
 these files were import to R Studio using read_csv function .The 12 downloaded  Csv files were merged into a master Data named *all_trips*
 
-
 ##*Data Processing*
  Iused  RStudio Desktop  as the data processing tool. the master data was fed into the software as a data sourse and transfomed .
  Handling missing values.
  Data cleaning and formatting.
- Exploratory Data Analysis
+We will want to add some additional columns of data such as day ,month ,year  that provide additional  opportunities to aggregate the data.
+We will want to add acalculated field for length of ride since the data did not have the tripduration coulumn,We will add ride_length to column to the data .
+There are some rides wherevtripduration showscup as negative,where Divvy took bikes out of circulation for quality control reasons.we will want too delet these rides.
 
 ##*Data Analysis* 
 Data has been cleaned and now we will move toward the analysis process
