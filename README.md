@@ -75,29 +75,25 @@ the analysis was performed using R code
 
 ![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
 
-Summary of Findings
+###Summary of Findings
 
-In the exploration, I found that
+In the exploration, The analysis indicates that
 
 
 The bike share service is also quite popular with the users as it has 68% of them as subscribers.
-The day with the most rides is Saturday and Sunday for Casual rider , Wednesday and Thrsday for Subscribers.
-Most users prefer to start their rides at 6:00AM  TO  9:00 AM and 3:00PM  TO  6:00PM for both rider type.
+Subscribers use Cyclistic more on weekends and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
+The day with the most rides is Saturday and Sunday  rider ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm .###
 
 Most rides last an average of 11 minutes and most people don't go beyond 13 minutes.The longest ride is 1409 minutes which is about 23 hours
-I went on to look at how subscribers use the service compared to the customers. The analysis indicates that
 
-Customers use the service mostly on Thursday, Friday, Sunday, Monday and Tuesday. Subscribers however use the service mostly on weekdays and occasionally on the weekends, that is, Saturday and Sunday.
-Subscribers mostly start their rides at 1700h and 0800h which could indicate they use it to go to work in the morning and back home in the evening while customers mostly start their rides at 1700h
-Interestingly enough though was discovering that customers covered more distance than the subscribers which in my opinion confirms that subscribers use it for commuting to work because the usage decreases significantly on weekends while customers use it for work and other activities perhaps.
+ . cll station are the most used station by Cyclistic riders.
+
+
 The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
 
 
-Most subscribers who identify as other start their rides at 1700h followed by 1800h and 0800h
-Most users from both categories preferred to ride on Thursdays at 1700h.
-
 Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their user category . I start by plotting a pie chart showing the Ride type distribution of the users followed by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.
+For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.Then i followed by plotting a pie chart showing the Ride type distribution of the users 
 
 image
 
