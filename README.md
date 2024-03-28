@@ -59,25 +59,25 @@ the analysis was performed using R code
 
  **CONDUCT DESCRIPTIVE ANALYSIS  on *ride_length (all figures in seconds)***
 
-#####Summary of ride_length:_
+##### Summary of ride_length:_
 
 ![Screenshot (134)](https://github.com/nisrinfrh/google_project/assets/157531427/351f8af9-00f5-4bcc-b950-2b36526adc39)
 
-#####Compare members and casual users:_
+##### Compare members and casual users:_
 ![Screenshot (135)](https://github.com/nisrinfrh/google_project/assets/157531427/dd3f856d-bb6c-4137-8e95-7dbe70a9a056)
   
-####See the average ride time by each day for members vs casual users:
+#### See the average ride time by each day for members vs casual users:
 
 ![Screenshot (137)](https://github.com/nisrinfrh/google_project/assets/157531427/0522f602-1584-4a6d-bca9-a3ae9a6772ba)
 
-#####analyze ridership data by type and weekday
+##### Analyze ridership data by type and weekday
 *#calculates the number of rides and average duration*
 
 ![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
 
-###Summary of Findings
+### Summary of Findings
 
-In the exploration, The analysis indicates that
+In the exploration,The analysis indicates that
 
 
 The bike share service is also quite popular with the users as it has 68% of them as subscribers.
