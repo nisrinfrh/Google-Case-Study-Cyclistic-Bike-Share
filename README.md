@@ -93,16 +93,20 @@ The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
 
 
 Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.
+For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour of the :-
+
 ![Screenshot (141)](https://github.com/nisrinfrh/google_project/assets/157531427/1b3bfdb6-474e-43d9-a79f-49cf72dc167c)
 
-Then i followed by plotting a pie chart showing the Ride type distribution of the users 
+
+###Then i followed by plotting a *pie chart* showing the Ride type distribution of the users:- 
 
 ![Screenshot (142)](https://github.com/nisrinfrh/google_project/assets/157531427/d8bb1045-2516-4593-a1e3-b6bad625cdee)
 
-Afterwards, I looked at how each category of users uses the service per day and plotted it on a bar chart which showed clearly the most popular days. I went ahead and broke it down further into the most popular hour of the day and what age of users were associated with it. I used a heatmap for this and the darker shades on the heatmap provided the required insights.
 
-image
+###Afterwards, I looked at how each category of users uses the service per day of the week and plotted it on a *Clustered  bar chart* which showed clearly the most popular days. 
+
+![Screenshot (143)](https://github.com/nisrinfrh/google_project/assets/157531427/aa57b87f-169b-417a-8058-c92ea3baf545)
+
 
 You can view more insights by downloading and opening this file in your browse
 Project Overview
