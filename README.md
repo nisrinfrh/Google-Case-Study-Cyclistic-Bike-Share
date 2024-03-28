@@ -93,9 +93,11 @@ The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
 
 
 Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.Then i followed by plotting a pie chart showing the Ride type distribution of the users 
+For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively.
+![Screenshot (141)](https://github.com/nisrinfrh/google_project/assets/157531427/1b3bfdb6-474e-43d9-a79f-49cf72dc167c)
 
-image
+Then i followed by plotting a pie chart showing the Ride type distribution of the users 
+
 
 Afterwards, I looked at how each category of users uses the service per day and plotted it on a bar chart which showed clearly the most popular days. I went ahead and broke it down further into the most popular hour of the day and what age of users were associated with it. I used a heatmap for this and the darker shades on the heatmap provided the required insights.
 
