@@ -98,6 +98,7 @@ For the presentation, I focus on the usage of the service by users according to 
 
 Then i followed by plotting a pie chart showing the Ride type distribution of the users 
 
+![Screenshot (142)](https://github.com/nisrinfrh/google_project/assets/157531427/d8bb1045-2516-4593-a1e3-b6bad625cdee)
 
 Afterwards, I looked at how each category of users uses the service per day and plotted it on a bar chart which showed clearly the most popular days. I went ahead and broke it down further into the most popular hour of the day and what age of users were associated with it. I used a heatmap for this and the darker shades on the heatmap provided the required insights.
 
