@@ -103,7 +103,7 @@ Most rides last an average of 11 minutes and most people don't go beyond 13 minu
  . cll station are the most used station by Cyclistic riders.
 
 
-The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
+The Average of tripduration for customers is 48.3 Minutes, and  for subscribers is Minutes.
 
 
 Key Insights for Presentation
