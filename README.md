@@ -6,6 +6,23 @@
 In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying  our skills in interpreting and presenting data.
 
 
+ A clear statement of the business task
+
+ A description of all data sources used
+
+ Documentation of any cleaning or manipulation of data
+
+ A summary of the analysis
+
+ Supporting visualizations and key findings
+
+ Recommendations based on the analysis
+
+### BUSINES Task
+Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims 
+to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily Morenothe director of marketing, and supported by Cyclistic;s markiting analytics team,this project will collect analyze and report data to guide the company;smarketing strategy.and to solve the question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce this case study  with the following deliverable.
+
+
 **Dataset**
  I Use Cyclistic’s historical trip data to analyze and identify trends.e Cyclistic
 is a fictional company. For the purposes of this case study, the datasets are appropriate and
@@ -14,7 +31,7 @@ Motivate International Inc. under this license (https://www.divvybikes.com/data-
 
 **Tools**
 *R* - Data Analysis
-.*PowerBI* - Creating reports
+*PowerBI* - Creating reports
 
 **Limitations**
 I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
@@ -27,9 +44,6 @@ Ihad to delete rows with negative values in duration column.
 3-How can Cyclistic use digital media to influence casual riders to become members.
  For this project ,I will focouse on the first busnis question and then i will do the second and thierd one.
 
-### BUSINES Task
-Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims 
-to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily Morenothe director of marketing, and supported by Cyclistic;s markiting analytics team,this project will collect analyze and report data to guide the company;smarketing strategy.
 
 ##*Data Preparation*
 
@@ -80,9 +94,9 @@ the analysis was performed using R code
 In the exploration,The analysis indicates that
 
 
-The bike share service is also quite popular with the users as it has 68% of them as subscribers.
-Subscribers use Cyclistic more on weekends and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
-The day with the most rides is Saturday and Sunday  rider ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm .###
+The bike share service is  quite popular with the users as it has 68% of them as subscribers.
+Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
+The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm .###
 
 Most rides last an average of 11 minutes and most people don't go beyond 13 minutes.The longest ride is 1409 minutes which is about 23 hours
 
@@ -93,7 +107,7 @@ The mean for customers is 1.67 km, and the mean for subscribers is 1.46 km.
 
 
 Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour of the :-
+For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour :-
 
 ![Screenshot (141)](https://github.com/nisrinfrh/google_project/assets/157531427/1b3bfdb6-474e-43d9-a79f-49cf72dc167c)
 
@@ -111,28 +125,7 @@ For the presentation, I focus on the usage of the service by users according to 
 You can view more insights by downloading and opening this file in your browse
 Project Overview
 
-This data analysis project aims to provide insights into the sales performance of an e-commerce company over the past year. By analyzing various aspects of the sales data, we seek to identify trends, make data-driven recommendations, and gain a deeper understanding of the company's performance.
 
-bar plot
-
-
-
-
-
-
-This analysis is mainly to solve the first question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce a report with the following deliverable.
-
-A. A clear statement of the business task
-
-B. A description of all data sources used
-
-C. Documentation of any cleaning or manipulation of data
-
-D. A summary of the analysis
-
-E. Supporting visualizations and key findings
-
-F. My top three recommendations based on the analysis
 Step 2: Prepare
 B. A description of all data sources used.
 Where is the data located? The data is located and stored in Amazon web server and is owned (first-party) by Cyclistic.
