@@ -38,7 +38,11 @@ Ihad to delete rows with negative values in duration column.
 
 I use primary source data downloaded from Cyclistic;s internal data which is made available by divvy open source data.The available Data will allow for examination of differences between user types, but not identification of underlying reasons.
 Data is kept in csv ,these files were import to R Studio using read_csv function .The 12 csv files were merged into a master Data Named *all_trips* with 13 columns and 3527368  rows  (for year 2020).
+
+**there  is no issues with bias or credibility in this data**
+
 The data seems to fit the definition of ROCCC:-
+
 **Reliable**Yes, the data is reliable as it is directly downloaded from the company’s servers.
 
 **Original**Yes, the data is collected and owned by Cyclistic.
@@ -53,9 +57,13 @@ The data seems to fit the definition of ROCCC:-
 
  Iused  RStudio Desktop  as the data processing tool. the master data was fed into the software as a data sourse 
  **.transfomed, andling missing values, Data cleaning and formatting.**
+ 
 **.add some additional columns of data such as day ,month ,year  that provide additional  opportunities to aggregate the data**
+
 **.Combined all 12 csv files into one file named *all_trips***
-**.add acalculated field for length of ride*ride_lenght* since the data did not have the tripduration coulum.**
+
+**.add acalculated field for length of ride*ride_lenght*  and week_day since the data did not have the tripduration coulum.**
+
 **.There are some rides where tripduration shows up as negative,where Divvy took bikes 
 out of circulation for quality control reasons.we will want too delet these rides.**
 
@@ -126,7 +134,7 @@ Where is the data located? The data is located and stored in Amazon web server a
 
 How is the data organized?  start coordinates are complete but the end coordinates has quite a few NULL values. The data needs to be geo-spacitally mapped to round-off the area which inturn gives the station name even if not available.
 
-Are there issues with bias or credibility in this data? Does your data ROCCC?  Let us elaborate:
+ Does your data ROCCC?  Let us elaborate:
 
 The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most recent and complete data which is 2021.
 
@@ -136,14 +144,12 @@ How are you addressing licensing, privacy, security, and accessibility? The Raw 
 
 How did you verify the data’s integrity? The identification of missing values ( start/end station names and their ID’s) are all identifiable given the coordinates which can be rounded off the station’s name and ID can be recovered.
 
-How does it help you answer your question?The data provided can help me answer the underlying question earlier stated “How do annual members and casual riders use Cyclistic bikes differently?” using the following metrics of most used ride, usage behavior and most used stations for start and stop.
 
-Are there any problems with the data?Data for around 500k/5.5M transactions is missing(start/end station name, Id’s), the challenge for me as an analyst will be either complete this data or consider the data which is complete. Considering the huge size of the data, i will be making analysis from the data available informing the stakeholders about the same to maintain transparency.
 
 Step 3 & 4: Process & Analyse
 Following are the steps in cleaning and manipulating the data
 
-Firstly, we will use excel to clean and transform the data.So, these were the steps used: + Join the data to make one data frame + save it in a separate spreadsheet. + add two columns (i.e. ride_length and week_day) and calculate its values. + add filters to the headers and filter end_lat with empty cells. Select all the visible cells and delete them. + delete rows with negative values in ride length. + find answers to the following values using formulas in excel. Here are the results.
+Firstly, we will use excel to clean and transform the data.So, these were the steps used: + Join the data to make one data frame + save it in a separate spreadsheet. + add two columns (i.e. ride_length ) and calculate its values. + add filters to the headers and filter end_lat with empty cells. Select all the visible cells and delete them. + delete rows with negative values in ride length. + find answers to the following values using formulas in excel. Here are the results.
 
 mode_weekday 7
 mean_ride_length 00:15:37
@@ -163,6 +169,6 @@ Average ride length by customer type and day of the week: Length of the rides of
 Biketype used by each type of subcribers and casual riders Clasic bikes are No#1 in demand and electric bikes. Demand for docked bikes is very insignificant compared to the two.
 ####draaaaffft 
 
-To measure the distance coverd by the users, I created a column for distance in kilometers, based on the longitude and latitude start and end points.It was clear from the distance covered by the users that most of them could only manage an average of 1.5km. The longest distance covered was 63km.
+
 
 Total rides analysis by weekday Causal riders use the service for leisure and members use it to mainly commute.
