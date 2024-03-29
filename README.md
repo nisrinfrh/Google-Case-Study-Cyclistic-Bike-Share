@@ -98,12 +98,12 @@ The bike share service is  quite popular with the users as it has 68% of them as
 Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
 The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm .###
 
-Most rides last an average of 11 minutes and most people don't go beyond 13 minutes.The longest ride is 1409 minutes which is about 23 hours
+The longest ride is  minutes which is about 23 hours and the shortest ride is
 
  . cll station are the most used station by Cyclistic riders.
 
 
-The Average of tripduration for customers is 48.3 Minutes, and  for subscribers is Minutes.
+The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.
 
 
 Key Insights for Presentation
