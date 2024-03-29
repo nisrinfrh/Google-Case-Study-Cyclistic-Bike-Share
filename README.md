@@ -6,18 +6,6 @@
 In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying  our skills in interpreting and presenting data.
 
 
- A clear statement of the business task
-
- A description of all data sources used
-
- Documentation of any cleaning or manipulation of data
-
- A summary of the analysis
-
- Supporting visualizations and key findings
-
- Recommendations based on the analysis
-
 ### BUSINES Task
 Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims 
 to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily Morenothe director of marketing, and supported by Cyclistic;s markiting analytics team,this project will collect analyze and report data to guide the company;smarketing strategy.and to solve the question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce this case study  with the following deliverable.
@@ -31,6 +19,7 @@ Motivate International Inc. under this license (https://www.divvybikes.com/data-
 
 **Tools**
 *R* - Data Analysis
+
 *PowerBI* - Creating reports
 
 **Limitations**
@@ -45,27 +34,32 @@ Ihad to delete rows with negative values in duration column.
  For this project ,I will focouse on the first busnis question and then i will do the second and thierd one.
 
 
-##*Data Preparation*
+## *Data Preparation*
 
-I use primary source data downloaded from Cyclistic;s internal data mwhich is made available by divvy open source data.The available data will allow for examination of differences between user types, but not identification of underlying reasons.
+I use primary source data downloaded from Cyclistic;s internal data which is made available by divvy open source data.The available Data will allow for examination of differences between user types, but not identification of underlying reasons.
+Data is kept in csv ,these files were import to R Studio using read_csv function .The 12 csv files were merged into a master Data Named *all_trips* with 13 columns and 3527368  rows  (for year 2020).
+The data seems to fit the definition of ROCCC:-
+**Reliable**Yes, the data is reliable as it is directly downloaded from the company’s servers.
 
-Data has been downloaded(12.Csv files were downloaded from 1 jan 2020 to 31 Dec 2020) and copies have been stored securely on my computer.
-these files were import to R Studio using read_csv function .The 12 downloaded  Csv files were merged into a master Data named *all_trips*
+**Original**Yes, the data is collected and owned by Cyclistic.
 
-##*Data Processing*
+**Comprehensive** -The data as stated earlier is a collection from 2013 till present. We have enough data to work with given the huge historical data.
 
- Iused  RStudio Desktop  as the data processing tool. the master data was fed into the software as a data sourse and transfomed .
- Handling missing values.
- Data cleaning and formatting.
-We will want to add some additional columns of data such as 
-day ,month ,year  that provide additional  opportunities to aggregate the data.
-then i combined all 12 csv files into one file named *all_trips*
-We will want to add acalculated field for length of ride since the data 
-did not have the tripduration coulumn,We will add ride_length to column to the data .
-There are some rides where tripduration shows up as negative,where Divvy took bikes 
-out of circulation for quality control reasons.we will want too delet these rides.
+**Current**- The data is regularly updated by the geotrackers in the bikes. So the data satisfies this property.
 
-##*Data Analysis* 
+**Cited** -no citing needed as the data is collected and owned by the companyCyclistic itself.
+
+## *Data Processing*
+
+ Iused  RStudio Desktop  as the data processing tool. the master data was fed into the software as a data sourse 
+ **.transfomed, andling missing values, Data cleaning and formatting.**
+**.add some additional columns of data such as day ,month ,year  that provide additional  opportunities to aggregate the data**
+**.Combined all 12 csv files into one file named *all_trips***
+**.add acalculated field for length of ride*ride_lenght* since the data did not have the tripduration coulum.**
+**.There are some rides where tripduration shows up as negative,where Divvy took bikes 
+out of circulation for quality control reasons.we will want too delet these rides.**
+
+## *Data Analysis* 
 
 Data has been cleaned and now we will move toward the analysis process
 
@@ -78,6 +72,7 @@ the analysis was performed using R code
 ![Screenshot (134)](https://github.com/nisrinfrh/google_project/assets/157531427/351f8af9-00f5-4bcc-b950-2b36526adc39)
 
 ##### Compare members and casual users:_
+
 ![Screenshot (135)](https://github.com/nisrinfrh/google_project/assets/157531427/dd3f856d-bb6c-4137-8e95-7dbe70a9a056)
   
 #### See the average ride time by each day for members vs casual users:
@@ -94,20 +89,19 @@ the analysis was performed using R code
 In the exploration,The analysis indicates that
 
 
-The bike share service is  quite popular with the users as it has 68% of them as subscribers.
-Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
-The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm .###
+**.The bike share service is  quite popular with the users as it has 68% of them as subscribers.**
+**.Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
+The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
 
-The longest ride is  minutes which is about 23 hours and the shortest ride is
+**.The longest ride is  minutes which is about 23 hours and the shortest ride is**
 
- . cll station are the most used station by Cyclistic riders.
+**. cll station are the most used station by Cyclistic riders.**
+
+**.The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.**
 
 
-The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.
-
-
-Key Insights for Presentation
-For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called start_hour that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour :-
+### Key Insights for Presentation
+For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called *start_hour* that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour :-
 
 ![Screenshot (141)](https://github.com/nisrinfrh/google_project/assets/157531427/1b3bfdb6-474e-43d9-a79f-49cf72dc167c)
 
@@ -130,20 +124,14 @@ Step 2: Prepare
 B. A description of all data sources used.
 Where is the data located? The data is located and stored in Amazon web server and is owned (first-party) by Cyclistic.
 
-How is the data organized? Data is kept in csv with 13 columns and 5.5M rows combined (for year 2021). start coordinates are complete but the end coordinates has quite a few NULL values. The data needs to be geo-spacitally mapped to round-off the area which inturn gives the station name even if not available.
+How is the data organized?  start coordinates are complete but the end coordinates has quite a few NULL values. The data needs to be geo-spacitally mapped to round-off the area which inturn gives the station name even if not available.
 
-Are there issues with bias or credibility in this data? Does your data ROCCC? The data seems to fit the definition of ROCCC. Let us elaborate:
+Are there issues with bias or credibility in this data? Does your data ROCCC?  Let us elaborate:
 
-Reliable -Yes, the data is reliable as it is directly downloaded from the company’s servers. The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most recent and complete data which is 2021.
+The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most recent and complete data which is 2021.
 
-Original -Yes, the data is collected and owned by Cyclistic.
 
-Comprehensive -The data as stated earlier is a collection from 2013 till present. We have enough data to work with given the huge historical data.
-
-Current - The data is regularly updated by the geotrackers in the bikes. So the data satisfies this property.
-
-Cited -no citing needed as the data is collected and owned by the companyCyclistic itself.
-
+###################################################3
 How are you addressing licensing, privacy, security, and accessibility? The Raw data is downloaded and kept in my laptop and will not be shared by any means and processed data will only be displayed as tables, tibbles and visualization.
 
 How did you verify the data’s integrity? The identification of missing values ( start/end station names and their ID’s) are all identifiable given the coordinates which can be rounded off the station’s name and ID can be recovered.
