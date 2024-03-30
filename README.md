@@ -126,7 +126,7 @@ For the presentation, I focus on the usage of the service by users according to 
 
 ###Then i followed by plotting a *pie chart* showing the Ride type distribution of the users:- 
 
-![Screenshot (142)](https://github.com/nisrinfrh/google_project/assets/157531427/d8bb1045-2516-4593-a1e3-b6bad625cdee)
+![Screenshot (147)](https://github.com/nisrinfrh/google_project/assets/157531427/c705c0cb-a86e-4bc5-98d3-8cbdeac6e167)
 
 
 ###Afterwards, I looked at how each category of users uses the service per day of the week and plotted it on a *Clustered  bar chart* which showed clearly the most popular days. 
