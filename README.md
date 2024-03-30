@@ -122,7 +122,7 @@ the analysis was performed using R code
 ### Key Insights for Presentation
 For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called *start_hour* that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour :-
 
-![Screenshot (148)](https://github.com/nisrinfrh/google_project/assets/157531427/f026cd18-f887-45bf-96f9-90c3e34400c6)
+!![Screenshot (154)](https://github.com/nisrinfrh/google_project/assets/157531427/3fc01090-62c2-44ad-a37e-65b9ba2f2d59)
 
 ###Then i followed by plotting a *pie chart* showing the Ride type distribution of the users:- 
 
