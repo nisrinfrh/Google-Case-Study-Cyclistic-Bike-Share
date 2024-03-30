@@ -131,7 +131,7 @@ For the presentation, I focus on the usage of the service by users according to 
 
 ###Afterwards, I looked at how each category of users uses the service per day of the week and plotted it on a *Clustered  bar chart* which showed clearly the most popular days. 
 
-![Screenshot (143)](https://github.com/nisrinfrh/google_project/assets/157531427/aa57b87f-169b-417a-8058-c92ea3baf545)
+![Screenshot (149)](https://github.com/nisrinfrh/google_project/assets/157531427/205d517e-a706-4f5e-a68f-ce2527d6fc72)
 
 
 You can view more insights by downloading and opening this file in your browse
