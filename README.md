@@ -1,47 +1,71 @@
 # Cyclistic Bike Share Analysis 
 
- Hi, Join me in the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study! 
+ Hi, Join me in the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study.
+ 
  In this case study I will be analyzing a public dataset for a fictional company provided by the course.
 
-In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions. Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate, solidifying  our skills in interpreting and presenting data.
+In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions.
+
+Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate
+
+solidifying  our skills in interpreting and presenting data.
 
 
-### BUSINES Task
-Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims 
-to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily Morenothe director of marketing, and supported by Cyclistic;s markiting analytics team,this project will collect analyze and report data to guide the company;smarketing strategy.and to solve the question, How do annual members and casual riders use Cyclistic bikes differently. Based on this, i will produce this case study  with the following deliverable.
+### *BUSINES Task*
+Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims
 
+to analyze the differences in bike usage between casual riders and annual members and develop anew marketing strategy to convert casual riders in to annual subscribers.led by lily
 
-**Dataset**
- I Use Cyclistic’s historical trip data to analyze and identify trends.e Cyclistic
-is a fictional company. For the purposes of this case study, the datasets are appropriate and
-will enable me to answer the business questions. The data has been made available by
-Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
+Morenothe director of marketing, and supported by Cyclistic's markiting analytics team,this project will collect analyze and report data to guide the companys smarketing strategy.and to solve the question :-
 
-**Tools**
-*R* - Data Analysis
+How do annual members and casual riders use Cyclistic bikes differently?
 
-*PowerBI* - Creating reports
+Based on this, i will produce this case study  with the following deliverable.
 
-**Limitations**
-I had to remove all null values from data because they would have affected the accuracy of my conclusions from the analysis. .
+***Tools***
+*R  Clean and transform data  and  Data  Analysis*
+
+*Powerbi  Visulaization and  Creating reports*
+
+***Limitations***
+
 I had to remove some columes i dont need in my analysis.
+
 Ihad to delete rows with negative values in duration column. 
 
-### BUSINESS QUESTIONS
+## *BUSINESS QUESTIONS*
 1- How do casual and  member riders use Cyclistic Bike Share diferently.
+
 2- Why would casual rides buy annual Cyclistic  memberships.
+
 3-How can Cyclistic use digital media to influence casual riders to become members.
- For this project ,I will focouse on the first busnis question and then i will do the second and thierd one.
+
+**For this project ,I will focouse on the first busnis question .**
 
 
 ## *Data Preparation*
 
-I use primary source data downloaded from Cyclistic;s internal data which is made available by divvy open source data.The available Data will allow for examination of differences between user types, but not identification of underlying reasons.
-Data is kept in csv ,these files were import to R Studio using read_csv function .The 12 csv files were merged into a master Data Named *all_trips* with 13 columns and 3527368  rows  (for year 2020).
+ I Use Cyclistic’s historical trip data to analyze and identify trends. For the purposes of this case study, the datasets are appropriate and
 
+will enable me to answer the business questions.
+
+The data is located and stored in Amazon web server and is owned (first-party) by Cyclistic.
+
+I use primary source data downloaded from Cyclistic's internal data.
+
+ **licensing, privacy, security, and accessibility** 
+ 
+The data has been made available by Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
+
+  The Raw data is downloaded and kept in my laptop and will not be shared by any means. 
+
+ Data is kept in csv ,these files were import to R Studio using read_csv function .The 12 csv files were merged into a master Data Named
+ 
+ *all_trips*
+ 
 **there  is no issues with bias or credibility in this data**
 
-The data seems to fit the definition of ROCCC:-
+**The data seems to fit the definition of ROCCC:-**
 
 **Reliable**Yes, the data is reliable as it is directly downloaded from the company’s servers.
 
@@ -52,6 +76,8 @@ The data seems to fit the definition of ROCCC:-
 **Current**- The data is regularly updated by the geotrackers in the bikes. So the data satisfies this property.
 
 **Cited** -no citing needed as the data is collected and owned by the companyCyclistic itself.
+
+The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most complete data wich is 2020 data  with 13 columns and 3527368  rows. 
 
 ## *Data Processing*
 
@@ -92,21 +118,6 @@ the analysis was performed using R code
 
 ![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
 
-### Summary of Findings
-
-In the exploration,The analysis indicates that
-
-
-**.The bike share service is  quite popular with the users as it has 68% of them as subscribers.**
-**.Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm  which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual
-The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
-
-**.The longest ride is  minutes which is about 23 hours and the shortest ride is**
-
-**. cll station are the most used station by Cyclistic riders.**
-
-**.The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.**
-
 
 ### Key Insights for Presentation
 For the presentation, I focus on the usage of the service by users according to their user category . Istart by introducing a new column called *start_hour* that extracts the hour of the day when the users use the service. This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes with affecting their users negatively. plotted it on a *Line  chart*  to visulize most popular hour :-
@@ -127,20 +138,34 @@ For the presentation, I focus on the usage of the service by users according to 
 You can view more insights by downloading and opening this file in your browse
 Project Overview
 
+### Summary of Findings
+
+In the exploration,The analysis indicates that
+
+
+**.The bike share service is  quite popular with the users as it has 62% of them as subscribers.**
+
+**.Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm**
+
+**which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual**
+
+**The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
+
+**.The longest ride is  minutes which is about 23 hours and the shortest ride is**
+
+**. cll station are the most used station by Cyclistic riders.**
+
+**.The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.**
+
+
+
 
 Step 2: Prepare
-B. A description of all data sources used.
-Where is the data located? The data is located and stored in Amazon web server and is owned (first-party) by Cyclistic.
 
-How is the data organized?  start coordinates are complete but the end coordinates has quite a few NULL values. The data needs to be geo-spacitally mapped to round-off the area which inturn gives the station name even if not available.
-
- Does your data ROCCC?  Let us elaborate:
-
-The data is a collection of all years from 2013 to 2022, for our analysis we have chosen the most recent and complete data which is 2021.
+How is the data organized? 
 
 
 ###################################################3
-How are you addressing licensing, privacy, security, and accessibility? The Raw data is downloaded and kept in my laptop and will not be shared by any means and processed data will only be displayed as tables, tibbles and visualization.
 
 How did you verify the data’s integrity? The identification of missing values ( start/end station names and their ID’s) are all identifiable given the coordinates which can be rounded off the station’s name and ID can be recovered.
 
