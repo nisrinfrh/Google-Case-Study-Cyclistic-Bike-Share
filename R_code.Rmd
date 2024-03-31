@@ -97,9 +97,9 @@ is.numeric(q1_2020$ride_length)
 
 q2_2020 <- q1_2020[!(q1_2020$start_station_name == "HQ QR" | q1+2020$ride_length<0),]
 
-#=====================================
+
 # STEP 4: CONDUCT DESCRIPTIVE ANALYSIS
-#=====================================
+
 # Descriptive analysis on ride_length (**all figures in seconds**)
 
 summary(all_trips_v2$ride_length)
@@ -127,30 +127,9 @@ q2_2020 %>%
             ,average_duration = mean(ride_length)) %>% 		# calculates the average duration
   arrange(member_casual, weekday)								# sorts
 
-# Let's visualize the number of rides by rider type
-q2_2020 %>% 
-  mutate(weekday = wday(started_at, label = TRUE)) %>% 
-  group_by(member_casual, weekday) %>% 
-  summarise(number_of_rides = n()
-            ,average_duration = mean(ride_length)) %>% 
-  arrange(member_casual, weekday)  %>% 
-  ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
-  geom_col(position = "dodge")
-
-# Let's create a visualization for average duration
-q2_2020 %>% 
-  mutate(weekday = wday(started_at, label = TRUE)) %>% 
-  group_by(member_casual, weekday) %>% 
-  summarise(number_of_rides = n()
-            ,average_duration = mean(ride_length)) %>% 
+ mean(ride_length)) %>% 
   arrange(member_casual, weekday)  %>% 
   ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
   geom_col(position = "dodge")
 
-#=================================================
-# STEP 5: EXPORT SUMMARY FILE FOR FURTHER ANALYSIS
-#=================================================
-# Create a csv file that we will visualize in Excel, Tableau, or my presentation software
-# N.B.: This file location is for a Mac. If you are working on a PC, change the file location accordingly (most likely "C:\Users\YOUR_USERNAME\Desktop\...") to export the data. You can read more here: https://datatofish.com/export-dataframe-to-csv-in-r/
-counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
-write.csv(counts, file = 'avg_ride_length.csv')
+
