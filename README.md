@@ -135,7 +135,7 @@ the analysis was performed using R code
 For the presentation, I focus on the usage of the service by users according to their user category.
 
 
-### plotting a *pie chart* showing the Ride type distribution of the users:- 
+ *pie chart* showing the Ride type distribution of the users:- 
 
 
 ![Screenshot (147)](https://github.com/nisrinfrh/google_project/assets/157531427/c705c0cb-a86e-4bc5-98d3-8cbdeac6e167)
@@ -147,7 +147,7 @@ This is an important insight because it could help the service providers know wh
 
 with affecting their users negatively.
 
-### plotted it on a *Line  chart*  to visulize most popular hour :-
+ *Line  chart*  to visulize most popular hour :-
 
 
 ![Screenshot (153)](https://github.com/nisrinfrh/google_project/assets/157531427/c2366f20-d8ea-4ba4-95f8-2582bbeba717)
@@ -158,15 +158,16 @@ with affecting their users negatively.
 
 Then  I looked at how each category of users uses the service per day of the week.   
 
-### plotted it on a *Clustered  bar chart  which showed clearly the most popular days.* 
+ *Clustered  bar chart  which showed clearly the most popular days.* 
 
 ![Screenshot (149)](https://github.com/nisrinfrh/google_project/assets/157531427/205d517e-a706-4f5e-a68f-ce2527d6fc72)
+
 
 
 *You can view more insights by downloading and opening this file in your browse Project Overview*
 
 
-## Summary of Findings
+### *Summary of Findings*
 
 In the exploration,The analysis indicates that
 
