@@ -57,15 +57,15 @@ The data is located and stored in Amazon web server and is owned (first-party) b
 
  **licensing, privacy, security, and accessibility** 
  
-The data has been made available by Motivate International Inc. under this license (https://www.divvybikes.com/data-license-agreement.)
+The data has been made available by Motivate International Inc under this license (https://www.divvybikes.com/data-license-agreement.)
 
 The Raw data is downloaded and kept in my laptop and will not be shared by any means. 
 
-Data is kept in csv ,these files were import to R Studio using read_csv function.The 12 csv files were merged into a master Data Named
+Data is kept in csv ,these files were import to R Studio using read_csv function.
+
+The 12 csv files were merged into a master data named *alltrips*
  
- *alltrips*
- 
-there  is no issues with bias or credibility in this data**
+there  is no issues with bias or credibility in this data
 
 **The data seems to fit the definition of ROCCC:-**
 
