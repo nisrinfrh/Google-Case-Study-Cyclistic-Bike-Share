@@ -14,6 +14,16 @@ conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
 
 # STEP 1: COLLECT DATA
+q12020 <- read_csv("Divvy_Trips_2020_Q1.csv")
+q42020 <- read_csv("Q4.csv")
+q52020 <- read_csv("Q5.csv")
+q62020 <- read_csv("Q6.csv")
+q72020 <- read_csv("Q7.csv")
+q82020 <- read_csv("Q8.csv")
+q92020 <- read_csv("Q9.csv")
+q102020 <- read_csv("Q10.csv")
+q112020 <- read_csv("Q11.csv")
+q122020 <- read_csv("Q12.csv")
 
 ## Upload Divvy datasets (csv files) here
 
