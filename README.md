@@ -23,9 +23,10 @@ How do annual members and casual riders use Cyclistic bikes differently?
 Based on this, i will produce this case study  with the following deliverable.
 
 ***Tools***
-*R  Clean and transform data  and  Data  Analysis*
 
-*Powerbi  Visulaization and  Creating reports*
+**R**  *Clean , transform data  and  Data  Analysis*
+
+**Powerbi**  *Visulaization and  Creating reports*
 
 ***Limitations***
 
