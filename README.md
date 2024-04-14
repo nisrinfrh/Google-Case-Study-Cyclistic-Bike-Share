@@ -172,54 +172,54 @@ Then  I looked at how each category of users uses the service per day of the wee
 In the exploration,The analysis indicates that
 
 
-**.The bike share service is  quite popular with the users as it has 62% of them as subscribers.**
+**.   The bike share service is  quite popular with the users as it has 62% of them as subscribers.**
 
-**.Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm**
+**Subscribers use Cyclistic more on weekdays and  mostly start their rides from 06:00 AM TO 09:00 Am and from 03:00 Pm  TO 05:00 Pm**
 
-**which could indicate they use it to go to work in the morning and back home in the evening  , while for Casual**
+**which could indicate they use it to go to work in the morning and back home in the evening .**
+
+**Casual riders tend to take more rides during weekends.**
 
 **The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
 
-**.The longest ride is  minutes which is about 23 hours and the shortest ride is**
+**Most active months for Casual riders are from June to August.**
+and   for Member
+
+
 
 **. cll station are the most used station by Cyclistic riders.**
 
-**.The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.**
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-indings
-Ridership Comparison
-Members have a higher number of rides compared to casual riders.
-Ride Duration
-Casual riders ride for a longer time period with an average ride duration of 46 minutes.
-Members have a shorter average ride duration of 17 minutes.
-Ride Frequency and Consistency
-There is consistency in the number of rides taken by members throughout the week.
-Casual riders tend to take more rides during weekends.
-Average Ride Duration
-On average, each ride is about 27 minutes.
-Casual users ride for 2.7x to 3x longer than members on any day of the week.
-Recommendations
-After analyzing the data, some recommendations to increase ridership and revenue for the bike-share program are:
+**- Casual riders ride for a longer time period with an average ride duration of 48.3 minutes.**
 
-Offer a weekend-only membership at a different price point than the full annual membership to entice casual users towards a full annual membership. They can only unlock bikes on Friday, Saturday, or Sunday.
-Implementing targeted social media ads aimed at individuals who have previously used bike-sharing services and have expressed an interest in travel, outdoor sports, parks, museums, and Chicago's tourist landmarks.
-Offering progressive discounts based on ride length could incentivize members to use the bikes for longer periods, leading to increased revenue for the company. The longer the ride, the greater the discount on rates, providing members with an affordable and flexible means of transportation.
+**Members have a shorter average ride duration of 15.8minutes.**
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-6. Act
-Conclusion based on our analysis:
+## *Recommendations*
 
-Casual riders rides mostly during the weekends.
-Casual riders ride longer duration, but least total trips.
-Casual riders rides longer on docked bike, but least total trips.
-Most popular station for casual riders are: Streeter Dr & Grand Ave, Lake Shore Dr & Monroe St, Millennium Park.
-Most active months for casual riders are from June to August.
 Marketing recommendations to convert casual riders into members:
 
-🚩 Marketing effort on the top 5 most popular stations for the causal riders. It can be a booth, print media on the bike or the locking station area, or social media post on contest starting from the most popular stations.
-⛱ Promotional short term membership offer during the summer months.
-🚴‍♂️ Promotional weekend term membership for the weekends.
-🎁 Point-award incentive system for riding more trips in a membership format to receive discount and partnership offer
+ Marketing effort on the top 5 most popular stations for the causal riders. It can be a booth, print media on the bike or the locking station area, or social media post on contest starting from the most popular stations.
+ Promotional short term membership offer during the summer months.
+ Promotional weekend term membership for the weekends.
+ Point-award incentive system for riding more trips in a membership format to receive discount and partnership offer
+
+After analyzing the data, some recommendations to increase ridership and revenue for the bike-share program are:
+
+Offer a weekend-only membership at a different price point than the full annual membership to entice casual users
+
+towards a full annual membership. They can only unlock bikes on Friday, Saturday, or Sunday.
+
+Implementing targeted social media ads aimed at individuals who have previously used bike-sharing services and 
+
+have expressed an interest in travel, outdoor sports, parks, museums, and Chicago's tourist landmarks.
+
+Offering progressive discounts based on ride length could incentivize members to use the bikes 
+
+for longer periods, leading to increased revenue for the company. The longer the ride, the greater
+
+the discount on rates, providing members with an affordable and flexible means of transportation.
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
