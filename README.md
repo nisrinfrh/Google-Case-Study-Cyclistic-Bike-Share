@@ -185,6 +185,25 @@ In the exploration,The analysis indicates that
 **. cll station are the most used station by Cyclistic riders.**
 
 **.The Average of tripduration for Casual is 48.3 Minutes, and  for ember is 15.81 Minutes.**
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+indings
+Ridership Comparison
+Members have a higher number of rides compared to casual riders.
+Ride Duration
+Casual riders ride for a longer time period with an average ride duration of 46 minutes.
+Members have a shorter average ride duration of 17 minutes.
+Ride Frequency and Consistency
+There is consistency in the number of rides taken by members throughout the week.
+Casual riders tend to take more rides during weekends.
+Average Ride Duration
+On average, each ride is about 27 minutes.
+Casual users ride for 2.7x to 3x longer than members on any day of the week.
+Recommendations
+After analyzing the data, some recommendations to increase ridership and revenue for the bike-share program are:
+
+Offer a weekend-only membership at a different price point than the full annual membership to entice casual users towards a full annual membership. They can only unlock bikes on Friday, Saturday, or Sunday.
+Implementing targeted social media ads aimed at individuals who have previously used bike-sharing services and have expressed an interest in travel, outdoor sports, parks, museums, and Chicago's tourist landmarks.
+Offering progressive discounts based on ride length could incentivize members to use the bikes for longer periods, leading to increased revenue for the company. The longer the ride, the greater the discount on rates, providing members with an affordable and flexible means of transportation.
 
 
 
