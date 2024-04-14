@@ -104,7 +104,7 @@ The data is a collection of all years from 2013 to 2022, for our analysis we hav
 
 Data has been cleaned and now we will move toward the analysis process
 
-the analysis was performed using R code 
+the analysis was performed using RStudio
 
  **CONDUCT DESCRIPTIVE ANALYSIS***  on *ride_length (all figures in seconds)
 
@@ -178,48 +178,36 @@ In the exploration,The analysis indicates that
 
 **which could indicate they use it to go to work in the morning and back home in the evening .**
 
-**Casual riders tend to take more rides during weekends.**
+**Casual riders tend to take more rides during weekends(Saturday and Sunday ).**
 
-**The day with the most rides is Saturday and Sunday ,and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
+**and mostly start their rides after 12:00pm and after 07:00pm untill 09:00 pm.**
 
-**Most active months for Casual riders are from June to August.**
-and   for Member
+**Most active months for Casual and Member riders are from June to September.**
 
-
-
-**. cll station are the most used station by Cyclistic riders.**
+**. Streeter Dr & Grand Ave station is the most used station by Cyclistic riders.**
 
 **- Casual riders ride for a longer time period with an average ride duration of 48.3 minutes.**
 
 **Members have a shorter average ride duration of 15.8minutes.**
+just about season
 
 ## *Recommendations*
 
-Marketing recommendations to convert casual riders into members:
+**Marketing recommendations to convert casual riders into members:**
 
- Marketing effort on the top 5 most popular stations for the causal riders. It can be a booth, print media on the bike or the locking station area, or social media post on contest starting from the most popular stations.
- Promotional short term membership offer during the summer months.
- Promotional weekend term membership for the weekends.
- Point-award incentive system for riding more trips in a membership format to receive discount and partnership offer
+ **Marketing effort targeting the top 10 most popular stations for riders could include posts on social media,**
+ 
+**print media displayed on bikes or at locking stations, and contests starting from the most popular station.**
+ 
+ **Offer promotional memberships during the summer months and weekends.**
+ 
+ **An incentive system to encourage more trips within a membership framework**
+ 
+**in order to receive discounts and partnership offers.**
 
-After analyzing the data, some recommendations to increase ridership and revenue for the bike-share program are:
+**Implementing targeted social media ads towards individuals who have previously utilized bike-sharing services and** 
 
-Offer a weekend-only membership at a different price point than the full annual membership to entice casual users
-
-towards a full annual membership. They can only unlock bikes on Friday, Saturday, or Sunday.
-
-Implementing targeted social media ads aimed at individuals who have previously used bike-sharing services and 
-
-have expressed an interest in travel, outdoor sports, parks, museums, and Chicago's tourist landmarks.
-
-Offering progressive discounts based on ride length could incentivize members to use the bikes 
-
-for longer periods, leading to increased revenue for the company. The longer the ride, the greater
-
-the discount on rates, providing members with an affordable and flexible means of transportation.
-
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+**have expressed  interest in travel, outdoor sports, parks, museums.**
 
 
 
