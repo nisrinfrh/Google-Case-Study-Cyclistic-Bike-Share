@@ -1,14 +1,14 @@
 # Cyclistic Bike Share Analysis 
 
- Hi, Join me in the Google Data Analyst Capstone Project, focusing on the Cyclistic Bike Share Case Study.
+ Hi! I invite you to  Join me in the Google Data Analyst Capstone Project,which focuses on the Cyclistic Bike Share Case Study.
  
- In this case study I will be analyzing a public dataset for a fictional company provided by the course.
+ In this project,we well analyze a public dataset provided by the course for a fictional company. 
 
-In this case study , we  dive deep into data analysis, applying advanced techniques to extract meaningful conclusions.
+Through this case study , we wIll  delve deep into data analysis, applying advanced techniques to derive meaningful conclusions.
 
-Explore the intersections of the Cyclistic Bike Share Case Study and the principles of the Google Data Analyst Professional Certificate
+We will explore how  the  Cyclistic Bike Share Case Study  intersect with  the principles of the Google Data 
 
-solidifying  our skills in interpreting and presenting data.
+Analyst Professional Certificate,enhancing our skills in interpreting and presenting data.
 
 
 ### *BUSINES Task*
