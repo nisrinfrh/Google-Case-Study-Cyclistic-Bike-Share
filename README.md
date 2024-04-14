@@ -205,7 +205,21 @@ Offer a weekend-only membership at a different price point than the full annual 
 Implementing targeted social media ads aimed at individuals who have previously used bike-sharing services and have expressed an interest in travel, outdoor sports, parks, museums, and Chicago's tourist landmarks.
 Offering progressive discounts based on ride length could incentivize members to use the bikes for longer periods, leading to increased revenue for the company. The longer the ride, the greater the discount on rates, providing members with an affordable and flexible means of transportation.
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+6. Act
+Conclusion based on our analysis:
 
+Casual riders rides mostly during the weekends.
+Casual riders ride longer duration, but least total trips.
+Casual riders rides longer on docked bike, but least total trips.
+Most popular station for casual riders are: Streeter Dr & Grand Ave, Lake Shore Dr & Monroe St, Millennium Park.
+Most active months for casual riders are from June to August.
+Marketing recommendations to convert casual riders into members:
+
+🚩 Marketing effort on the top 5 most popular stations for the causal riders. It can be a booth, print media on the bike or the locking station area, or social media post on contest starting from the most popular stations.
+⛱ Promotional short term membership offer during the summer months.
+🚴‍♂️ Promotional weekend term membership for the weekends.
+🎁 Point-award incentive system for riding more trips in a membership format to receive discount and partnership offer
 
 
 
