@@ -4,7 +4,7 @@ author: "nisrin"
 date: "2024-02-20"
 output: html_document
 ---
-## setting up my environment by loading tidyverse backeges 
+##setting up my environment by loading tidyverse backeges 
 library(tidyverse)  #helps wrangle data
 # Use the conflicted package to manage conflicts
 library(conflicted)
