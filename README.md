@@ -10,6 +10,15 @@ We will explore how  the  Cyclistic Bike Share Case Study  intersect with  the p
 
 Analyst Professional Certificate,enhancing our skills in interpreting and presenting data.
 
+###Tools used for Analysis
+
+**Microsoft Excel**: Used to get hold and understand the data we are dealing with and the parameters.
+
+**RStudio** : For further analysis I used MSSQL.
+
+**Powerbi**: Used this tool for Visualization.
+
+
 
 ### *BUSINES Task*
 Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual subscribers for its future success.To achieve this goal,this project aims
@@ -210,38 +219,10 @@ just about season
 **have expressed  interest in travel, outdoor sports, parks, museums.**
 *******************************************************
 
-Introduction :
 
-The cyclist started a successful Bike-sharing program: the cyclist customers are divided in two categories ;
 
-Customers who purchase single ride or full-day rides referred to as Casual Riders
-Customers who purchase annual membership are considered Cyclistic members
-The dataset consists of the past 12 months data from the December 2020 to November 2021.
 
-You can download the dataset from this link
 
-Conflict:
-
-The finance analysts concluded that the annual members are much more profitable than the Casual riders and the Manager, believed that maximizing the number of annual member will be key to future growth. She also believed that rather than creating a marketing campaign that targets all new-customers, there is a very good chance to convert Casual riders into members.
-
-Tools used for Analysis
-
-Microsoft Excel: Used to get hold and understand the data we are dealing with and the parameters.
-Microsoft SQL Server : For further analysis I used MSSQL.
-Powerbi: Used this tool for Visualization.
-Data Preparation
-
-Here we will process data cleaning and ensuring that the correct relevant, complete and free of error and outlier when performing analysis:
-
-Explore and observe data
-Check for and treat missing values
-Transform data-format types types
-Created a column named “total minutes” which calculates the time length of the rides
-Created another column named “weekday” to calculate the day of the week
-Removed columns where the ride-id length column isn't equal to 16 characters.
-Further analysis took place in MSSQL Server.
-
-Check out my Sql code 
 
 
 
