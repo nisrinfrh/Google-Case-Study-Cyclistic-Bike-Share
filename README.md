@@ -10,7 +10,7 @@ We will explore how  the  Cyclistic Bike Share Case Study  intersect with  the p
 
 Analyst Professional Certificate,enhancing our skills in interpreting and presenting data.
 
-###Tools used for Analysis
+### Tools used for Analysis
 
 **Microsoft Excel**: Used to get hold and understand the data we are dealing with and the parameters.
 
