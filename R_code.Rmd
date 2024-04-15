@@ -4,8 +4,8 @@ author: "nisrin"
 date: "2024-02-20"
 output: html_document
 ---
-##setting up my environment by loading tidyverse backeges 
-library(tidyverse)  #helps wrangle data
+## setting up my environment by loading tidyverse backeges 
+library(tidyverse) 
 # Use the conflicted package to manage conflicts
 library(conflicted)
 
@@ -13,7 +13,8 @@ library(conflicted)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("lag", "dplyr")
 
-# STEP 1: COLLECT DATA
+# STEP 1:
+## Upload Divvy datasets (csv files) 
 q12020 <- read_csv("Divvy_Trips_2020_Q1.csv")
 q42020 <- read_csv("Q4.csv")
 q52020 <- read_csv("Q5.csv")
@@ -25,30 +26,7 @@ q102020 <- read_csv("Q10.csv")
 q112020 <- read_csv("Q11.csv")
 q122020 <- read_csv("Q12.csv")
 
-## Upload Divvy datasets (csv files) here
-
-q1_2020 <- read_csv("Divvy_Trips_2020_Q1.csv")
-
-q1_2020 <- read_csv("
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-q1_2020 <- read_csv
-
-
-
 # STEP 2: WRANGLE DATA 
-
 
 # Inspect the dataframes and look for incongruencies
 ## str(q1_2019)
@@ -57,13 +35,14 @@ q1_2020 <- read_csv
 q1_2020 <-  mutate(q1_2020, ride_id = as.character(ride_id)
                    ,rideable_type = as.character(rideable_type)) 
 
-
-# Remove lat, long,  fields as this data was dropped beginning in 2020
+# Remove lat, long,  fields
 all_trips <- all_trips %>%  
   select(-c(start_lat, start_lng, end_lat, end_lng))
 
 
-# STEP 3: CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
+# STEP 3:
+
+CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
 
 # Inspect the new table that has been created
 colnames(all_trips) 
