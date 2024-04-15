@@ -1,20 +1,21 @@
 ---
-title: "R code"
-author: "nisrin"
-date: "2024-02-20"
+title: "linkedin"
+author: "nsren"
+date: "2024-03-26"
 output: html_document
 ---
-## setting up my environment by loading tidyverse backeges 
-library(tidyverse) 
-# Use the conflicted package to manage conflicts
-library(conflicted)
 
-# Set dplyr::filter and dplyr::lag as the default choices
-conflict_prefer("filter", "dplyr")
-conflict_prefer("lag", "dplyr")
+##Set up enviroment
+```{r}
+library(tidyverse) #helps wrangle data
+```
 
 # STEP 1:
-## Upload Divvy datasets (csv files) 
+COLLECT DATA
+
+# # Upload Divvy datasets (csv files) here
+
+```{r}
 q12020 <- read_csv("Divvy_Trips_2020_Q1.csv")
 q42020 <- read_csv("Q4.csv")
 q52020 <- read_csv("Q5.csv")
@@ -25,100 +26,155 @@ q92020 <- read_csv("Q9.csv")
 q102020 <- read_csv("Q10.csv")
 q112020 <- read_csv("Q11.csv")
 q122020 <- read_csv("Q12.csv")
+```
 
-# STEP 2: WRANGLE DATA 
+# STEP 2: WRANGLE DATA AND COMBINE INTO A SINGLE FILE
 
-# Inspect the dataframes and look for incongruencies
-## str(q1_2019)
 
-# Convert ride_id and rideable_type to character so that they can stack correctly
-q1_2020 <-  mutate(q1_2020, ride_id = as.character(ride_id)
-                   ,rideable_type = as.character(rideable_type)) 
+# Convert start_station_id in q122020 to numaric so that they can stack correctly
 
-# Remove lat, long,  fields
-all_trips <- all_trips %>%  
+```{r}
+q122020 <- mutate(q122020,start_station_id  = as.numeric (start_station_id ))
+```
+## Convert end_station_id in q12020 and q122020 to numaric so that they can stack correctly
+ 
+```{r}
+q12020 <- mutate(q12020,end_station_id  = as.numeric (end_station_id ))
+```
+
+```{r}
+q122020 <- mutate(q122020,end_station_id  = as.numeric (end_station_id ))
+```
+
+```{r}
+is.numeric(q12020$end_station_id)
+
+```
+                  
+# Stack individual quarter's data frames into one big data frame
+```{r}
+all_trips <- bind_rows(q12020, q42020,q52020,q62020,q72020,q82020,q92020,q102020,q112020,q122020)
+```
+
+# Remove lat, long, and end_station_id fields as we dont need
+```{r}
+all_trips <- all_trips %>%
   select(-c(start_lat, start_lng, end_lat, end_lng))
-
-
-# STEP 3:
-
-CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
+```
+# STEP 3: CLEAN UP AND ADD DATA TO PREPARE FOR ANALYSIS
 
 # Inspect the new table that has been created
-colnames(all_trips) 
-nrow(all_trips) 
-str(all_trips)  
- #Statistical summary of data. Mainly for numerics
-summary(all_trips) 
 
-# There are a few problems we will need to fix:
+```{r}
+colnames(alltrips2) #List of column names
+```
 
-# (1) The data can only be aggregated at the ride-level, which is too granular. We will want to add some additional columns of data -- such as day, month, year -- that provide additional opportunities to aggregate the data.
+```{r}
+summary(all_trips) #Statistical summary of data. Mainly for numerics
+```
 
-# Add columns that list the date, month, day, and year of each ride
-# This will allow us to aggregate ride data for each month, day, or year ...
+# There are a few problems in our data (2020) we will need to fix:
+# (1) In the "member_casual" column, there are two names for members ("member" and
+"Subscriber") and two names for casual riders ("Customer" and "casual"). We will need to
+consolidate that from four to two labels.
+# Begin by seeing how many observations fall under each usertype
 
-q1_2020$date <- as.Date(all_trips$started_at) #The default format is yyyy-mm-dd
-q1_2020$month <- format(as.Date(q1_2020$date), "%m")
-q1_2020$day <- format(as.Date(q1_2020$date), "%d")
-q1_2020$year <- format(as.Date(q1_2020$date), "%Y")
-q1_2020$day_of_week <- format(as.Date(q1_2020$date), "%A")
+```{r}
+table(all_trips$member_casual)
 
-# (2) We will want to add a calculated field for length of ride since the 2020Q1 data did not have the "tripduration" column. We will add "ride_length" to the entire dataframe for consistency.
+```
+```{r}
+all_trips <- all_trips %>%
+  mutate(member_casual = recode(member_casual
+                                ,"Subscriber" = "member"
+                                ,"Customer" = "casual"))
+```
+# Add columns that list the date, month, day, and day_of_week that provide additional
+opportunities to aggregate the data.
 
-# Add a "ride_length" calculation to q1_2020 (in seconds)
+```{r}
+all_trips$date <- as.Date(all_trips$started_at) #The default format is yyyy-mm-dd
+all_trips$month <- format(as.Date(all_trips$date), "%m")
+all_trips$day <- format(as.Date(all_trips$date), "%d")
+all_trips$day_of_week <- format(as.Date(all_trips$date), "%A")
+```
 
-q1_2020$ride_length <- difftime(q1_2020$ended_at,q1_2020$started_at)
-
-# Inspect the structure of the columns
-str(q1_2020)
-
+# (3) # Add a "ride_length" calculation to all_trips (in seconds)
+```{r}
+all_trips$ride_length <- difftime(all_trips$ended_at,all_trips$started_at)
+```
 # Convert "ride_length" from Factor to numeric so we can run calculations on the data
+```{r}
+is.factor(all_trips$ride_length)
+```
+```{r}
 
-is.factor(q1_2020$ride_length)
-q1_2020$ride_length <- as.numeric(as.character(q1_2020$ride_length))
-is.numeric(q1_2020$ride_length)
+all_trips$ride_length <- as.numeric(as.character(all_trips$ride_length))
+is.numeric(all_trips$ride_length)
+```
+#Convert ride_length from from seconds into minutes
+all_trips$ride_length <- as.numeric(all_trips$ride_length/60)
 
-# (3) There are some rides where tripduration shows up as negative, including several hundred rides where Divvy took bikes out of circulation for Quality Control reasons. We will want to delete these rides.
-# Remove "bad" data
-# The dataframe includes a few hundred entries when bikes were taken out of docks and checked for quality by Divvy or ride_length was negative
+
+# Remove bad "negative" data
 # We will create a new version of the dataframe (v2) since data is being removed
+```{r}
+all_trips <- all_trips[!(all_trips$start_station_name == "HQ QR" | all_trips$ride_length<0)]
+```
 
-q2_2020 <- q1_2020[!(q1_2020$start_station_name == "HQ QR" | q1+2020$ride_length<0),]
+# STEP 4:
 
+CONDUCT DESCRIPTIVE ANALYSIS
 
-# STEP 4: CONDUCT DESCRIPTIVE ANALYSIS
-
-# Descriptive analysis on ride_length (**all figures in seconds**)
-
+# Descriptive analysis on ride_length (all figures in seconds)
+```{r}
 summary(all_trips_v2$ride_length)
+```
 
 # Compare members and casual users
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual, FUN = mean)
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual, FUN = median)
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual, FUN = max)
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual, FUN = min)
+```{r}
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual, FUN = mean)
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual, FUN = median)
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual, FUN = max)
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual, FUN = min)
+```
+
 
 # See the average ride time by each day for members vs casual users
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual + q2_2020$day_of_week, FUN = mean)
+```{r}
+
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week,
+          FUN = mean)
+```
+# Top 10 station
+
+```{r}
+ group_by(alltrips2,start_station_id,start_station_name)%>%
+
+ summarize(Stations= n(),start_station_name)
+```
 
 # Notice that the days of the week are out of order. Let's fix that.
-q2_2020$day_of_week <- ordered(q2_2020$day_of_week, levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+```{r}
+all_trips$day_of_week <- ordered(all_trips$day_of_week, levels=c("Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+```
+
 
 # Now, let's run the average ride time by each day for members vs casual users
-aggregate(q2_2020$ride_length ~ q2_2020$member_casual + q2_2020$day_of_week, FUN = mean)
+```{r}
+aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week,
+          FUN = mean)
+```
+
 
 # analyze ridership data by type and weekday
-q2_2020 %>% 
-  mutate(weekday = wday(started_at, label = TRUE)) %>%  #creates weekday field using wday()
-  group_by(member_casual, weekday) %>%  #groups by usertype and weekday
-  summarise(number_of_rides = n()							#calculates the number of rides and average duration 
-            ,average_duration = mean(ride_length)) %>% 		# calculates the average duration
-  arrange(member_casual, weekday)								# sorts
-
- mean(ride_length)) %>% 
-  arrange(member_casual, weekday)  %>% 
-  ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
-  geom_col(position = "dodge")
+```{r}
+all_trips_v2 %>%
+  mutate(weekday = wday(started_at, label = TRUE)) %>% #creates weekday field using wday()
+group_by(member_casual, weekday) %>% #groups by usertype and weekday
+  summarise(number_of_rides = n() #calculates the number of rides and average duration
+            ,average_duration = mean(ride_length)) %>% # calculates the average  duration
+arrange(member_casual, weekday) 
+```
 
 
