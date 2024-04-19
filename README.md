@@ -173,11 +173,6 @@ Then  I looked at how each category of users uses the service per day of the wee
 
 
 
-*You can view more insights by downloading and opening this file in your browse Project Overview*
-
-![image](https://github.com/nisrinfrh/google_project/assets/157531427/f6b07bf0-4a21-4008-8525-f7391a7c22e9)
-
-
 ### *Summary of Findings*
 
 In the exploration,The analysis indicates that
