@@ -221,7 +221,142 @@ In the exploration,The analysis indicates that
 
 *******************************************************
 
+yclistic bike-share analysis case study is one of the capstone projects for the Google Data Analytics Professional Certificate which I completed in October 2023.
 
+![image](https://github.com/nisrinfrh/google_project/assets/157531427/8644d2df-23ca-478f-96af-16aa145ccb6d)
+
+BACKGROUND
+This project is based on data curated for a fictional bike-sharing company called Cyclistic. The Company has more than 5,800 bicycles plus reclining bikes, hand tricycles and cargo bikes with over 600 docking stations to hold the bikes. The company has a flexible strategy that allows riders to unlock a bike from one station and return it to any other station anytime. Cyclistic is made up of two teams; a team of data analysts, the marketing analytics team and the executive team, the team that approves or disapproves recommended marketing programs.
+
+Due to flexibility of its pricing plans, Cyclistic also has two types of riders;
+
+Casual Riders: Customers who purchase single-ride or full day passes.
+
+Cyclistic Members: Customers who purchase annual memberships.
+
+DATA ANALYSIS PHASES
+The following steps were used for this case study;
+
+Ask → Prepare → Process → Analyze → Share → Actions
+
+ASK
+The ask phase was where I identified the business task and considered the demands of the key stakeholders.
+
+Business Task: The aim of this case study is to understand how casual riders and annual members use Cyclistic bikes differently.
+
+Insights: The insights obtained from this case study will be used by the Cyclistic marketing analytics team to design a new marketing strategy aimed at converting casual riders into annual members.
+
+PREPARE
+The datasets used for this case study to analyze and identify trends is Cyclistic’s historical trip data . Since the business task requires only 12 months of Cyclistic trip data, I downloaded the quarterly datasets (from the second quarter of 2019 to the first quarter of 2020) for my analysis .
+
+
+Below are some important observation and task carried out at this phase;
+
+The datasets are located in a document folder named Cyclistic Case Study.
+Four CSV files of Divvy quarterly trips data are organized in the above folder with an appropriate naming convention classified by years and quarters.
+There is no issue with bias or credibility in this data as it is Reliable, Original, Comprehensive, Current and well Cited.
+The data is made available for the purpose of this case study by Motivate International Inc. under this license.
+PROCESS
+I used the following tools for this case study;
+
+RStudio to clean, process and analyze the data.
+Google Sheets for further statistical evaluation on the results from the analyzed data.
+Tableau and R’s ggplot2 to create meaningful visualizations from the analyzed data
+R Markdown to create an HTML documentation of the project.
+GitHub and RPubs to create a repository for the codes used and create a public link to the visuals created respectively
+These are the steps taken for the processing of the data:
+
+I set my working directory to the folder that has the datasets.
+I installed the required packages for the analysis of these datasets. The “tidyverse” package to analyze and clean the data, “Lubridate ‘’ for the date attributes and “ggplot2” for visualization.
+I uploaded the four quarterly trips datasets which are in csv format to R using the ‘read_csv’ function and assigned them each to a more consistent name.
+
+I checked for consistency in the column names of the datasets using the ‘colnames’ function and I discovered that the columns of datasets ‘q2_2019’, q3_2019, ‘q4_2019’ match perfectly but some of their columns do not match with ‘q1_2020’.
+I renamed the columns to make them consistent with ‘q1_2020’ as it’s the most recent year and it is assumed it will be the table design for divvy going forward.
+I made sure the data frames are in the same format, then I combined them using the ‘bind_rows’ function into one big data frame named “all_trips”.
+I removed some irrelevant columns such as ‘lat’, ‘long’, ‘ birthyear’, and ‘gender’ as this data was dropped starting in 2020.
+DATA CLEAN UP
+
+One of the most important things to do before analyzing is to clean the data so as to avoid errors and bias. The first thing to do is to inspect the new table created (all_trips) and I used the following functions to do that;
+
+colnames(all_trips) — to check the list of column names.
+nrow(all_trips) — to see how many rows are in the data frame.
+dim(all_trips) — to check dimensions of the data frame.
+head(all_trips) / tail(all_trips) — to see the first or last few rows of the data frame.
+str(all_trips) — to see a list of columns and data types of the data frame.
+summary(all_trips) — to see the statistical summary of the data.
+Observations & Solutions
+
+Observation: In the “member_casual” column which is one of the most important columns to be analyzed, there are two names for members — “member” and “Subscriber” and same for casual riders — “casual” and “Customer”.
+
+Solution: Consolidation of the column labels from four to two by replacing the “Subscriber” label with “member” and the “Customer” label with “casual”.
+
+
+Observation: The data can only be aggregated at the ride-level which is not enough for our analysis
+
+Solution: Addition of some columns to the data such as day, month, year to provide more opportunities to aggregate the data.
+
+Observation: The q1_2020 data did not have the “tripduration” column which is a necessary field to determine the length of ride.
+
+Solution: Addition of a calculated field “ride_length” to the entire data frame for consistency.
+
+
+Observation: There are some rides where trip duration shows up as negative, including several hundred rides where bikes were taken out of circulation for Quality Control reasons.
+
+Solution: Created a new version of the data frame, “all_trips_v2” since data is being removed, then I deleted the negative “ride_length” and the “HQ QR” rows which is a representation of when bikes were out of circulation.
+
+ANALYZE
+After cleaning and properly formatting the data, I did a descriptive analysis on it. The new and clean version of the data frame contained a total of 3,776,042 rows with the annual members having 76.7% of Cyclistic’s total customers while the casual members had only 23.3%.
+
+
+Through the analysis performed, I discovered trends on how Cyclistic member and casual riders use bikes, I also gained the following insights;
+
+The mid-point number and average ride length.
+The longest and shortest ride.
+The average ride time by each day of the week for members and casual users.
+Ridership data (number of rides and average duration) by type and weekday.
+
+I was also able to identify trends in the ‘number of rides by rider type’ and ‘average duration by rider type’ column graphs I created using the ggplot2 R package. These insights and discoveries gave me a better understanding of how annual members use Cyclistic bikes differently from casual riders.
+
+SHARE
+I created insightful visualizations of the data with Tableau Public and RStudio.
+
+
+The Tableau and RStudio visualizations can be found here on Tableau Public Story and RPubs respectively.
+
+I also created a markdown report which shows details on how the RStudio plots and dashboards were created, the link can be found here on RPubs Cyclistic Report.
+
+ACTIONS
+At this phase, I took some observations from the analyzed data which turned out to be important insights and I also pointed out a few recommendations which will all be summarized below.
+
+OBSERVATIONS
+
+Because they most likely ride for leisure, Casual Riders ride for a significant longer period than Annual Members.
+Both Annual Members and Casual Riders are most active in the summer.
+Annual Members take over 75% of the total rides in a year.
+Casual Riders ride for a longer period during the winter season while Annual Members ride longer in the summer.
+Annual Members ride more during weekdays as they mostly use it to commute to work while Casual Riders ride more on weekends.
+Annual Members are most active in the morning around 7:00 AM to 9:00 AM and early evening around 4:00 PM to 6:00 PM while Casual Members are most active in the day around 12:00 PM to 6:00 PM.
+RECOMMENDATIONS
+
+Cyclistic should add new plans under the annual membership that will be favorable to the Casual Riders. For example, a weekend yearly plan can be introduced as most Casual Riders love to ride on weekends. This weekend plan would be cheaper than the full membership plan as riders who opt for this will be limited to riding on just weekends for a full calendar year.
+An Annual day plan valid at noon only (12pm — 6pm) can be introduced as the Casual Riders prefer to ride during this time frame. To attract riders, this plan should be significantly cheaper than the full membership plan as well.
+The company can also give exciting annual offers to Casual Riders. For example, for customers who love single-rides, they can create a family / friends plan that allows up to three users to share an annual membership.
+There should be certain treats that should be limited to just the Annual Members. The company could restrict Casual Riders to ride for just a certain duration while Annual Members can ride for as long as they want. They could also restrict the Casual Riders who purchase single-rides to a certain amount of rides per day or per week. This can prompt Casual Riders who want to enjoy the full riding package to opt for annual membership.
+As both users are most active during summer, there could be congestion and it is best to have both users under one accord for easy management. To achieve this, the company should introduce a seasonal pass exclusive to the summer period for Casual Riders only as Annual Members would always stand to enjoy the full package regardless of the season. Rather than paying extra for a seasonal pass in the summer, some Casual Riders would opt for the annual membership to enjoy the complete Cyclistic package.
+Cyclistic should launch a campaign to introduce the new membership options and its benefits to the users with Casual Riders being the main audience.
+ADDITIONAL SUGGESTION: For more important insights, data like “Unique Member ID” which will allow us to know the number of distinct riders and “Membership / Plan Prices” which will allow us to know the prices of existing plans ( one of the major factors riders would consider before choosing a plan) should have been provided.
+
+IMPORTANT LINKS
+Listed below are the links to all important details about this project from the codes used to the visualizations created and more.
+
+GitHub - You can find all code files used to clean, analyze and visualize the data in this repository.
+
+RPubs - Every visualization created using RStudio’s ggplot2 package including the HTML documentation file can be found here.
+
+Tableau - The link to a well curated story for the visualizations created on Tableau.
+
+
+This concludes the article, thank you for your time and I hope it would be of great help to you!
 
 
 
