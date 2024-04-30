@@ -24,7 +24,7 @@ Members Riders : Customers who purchase annual memberships.
 
 ***Ask  →  Prepare  →  Process  →  Analyze  →  Share  →  Actions***
 
-## ASK
+# ASK  ❓❓❓❓
 
 These questions identified the business task and considered the demands of the key stakeholders:
 
@@ -97,7 +97,7 @@ there  is no issues with bias or credibility in this data.
 
   will enable me to answer the business questions.
 
-## PROCESS
+# PROCESS
 
 I used RStudio Desktop as the primary data processing tool for this analysis.
 
@@ -131,7 +131,7 @@ The original data did not have the trip duration column.
 
 Maintain data integrity throughout the analysis.
 
-## ANALYZE
+# ANALYZE
 
 The analysis was performed using RStudio.
 
@@ -200,20 +200,13 @@ Then  I looked at how each category of users uses the service per day of the wee
 
 ### *Summary of Findings*
 
-ACTIONS
-At this phase, I took some observations from the analyzed data which turned out to be important insights and I also pointed out a few recommendations which will all be summarized below.
+# ACTIONS
 
-OBSERVATIONS
+At this phase, I took some observations from the analyzed data which turned out to be important insights and 
 
-Because they most likely ride for leisure, Casual Riders ride for a significant longer period than Annual Members.
-.
-Annual Members take over 75% of the total rides in a year.
-Casual Riders ride for a longer period during the winter season while Annual Members ride longer in the summer.
-Annual Members ride more during weekdays as they mostly use it to commute to work while Casual Riders ride more on weekends.
+I also pointed out a few recommendations which will all be summarized below.
 
-
-In the exploration,The analysis indicates that
-
+**OBSERVATIONS**
 
 **The bike share service is  quite popular with the users as it has 62% of them as Annual Members .**
 
@@ -231,12 +224,12 @@ In the exploration,The analysis indicates that
 
 **. Streeter Dr & Grand Ave stations are the most used stations by Cyclistic riders.**
 
-**- Casual riders ride for a longer time period with an average ride duration of 48.3 minutes.**
+**- Casual riders ride for a longer time period with an average ride duration of 47.58 minutes.**
 
-**Members have a shorter average ride duration of 15.8 minutes.**
+**Members have a shorter average ride duration of 15.14 minutes.**
 
 
-## *Recommendations*
+ **Recommendations**
 
 **Marketing recommendations to convert casual riders into members:**
 
@@ -259,31 +252,6 @@ In the exploration,The analysis indicates that
 **have expressed  interest in travel, outdoor sports, parks, museums.**
 
 *******************************************************
-
-
-RECOMMENDATIONS
-
-Cyclistic should add new plans under the annual membership that will be favorable to the Casual Riders. For example, a weekend yearly plan can be introduced as most Casual Riders love to ride on weekends. This weekend plan would be cheaper than the full membership plan as riders who opt for this will be limited to riding on just weekends for a full calendar year.
-An Annual day plan valid at noon only (12pm — 6pm) can be introduced as the Casual Riders prefer to ride during this time frame. To attract riders, this plan should be significantly cheaper than the full membership plan as well.
-The company can also give exciting annual offers to Casual Riders. For example, for customers who love single-rides, they can create a family / friends plan that allows up to three users to share an annual membership.
-There should be certain treats that should be limited to just the Annual Members. The company could restrict Casual Riders to ride for just a certain duration while Annual Members can ride for as long as they want. They could also restrict the Casual Riders who purchase single-rides to a certain amount of rides per day or per week. This can prompt Casual Riders who want to enjoy the full riding package to opt for annual membership.
-As both users are most active during summer, there could be congestion and it is best to have both users under one accord for easy management. To achieve this, the company should introduce a seasonal pass exclusive to the summer period for Casual Riders only as Annual Members would always stand to enjoy the full package regardless of the season. Rather than paying extra for a seasonal pass in the summer, some Casual Riders would opt for the annual membership to enjoy the complete Cyclistic package.
-Cyclistic should launch a campaign to introduce the new membership options and its benefits to the users with Casual Riders being the main audience.
-ADDITIONAL SUGGESTION: For more important insights, data like “Unique Member ID” which will allow us to know the number of distinct riders and “Membership / Plan Prices” which will allow us to know the prices of existing plans ( one of the major factors riders would consider before choosing a plan) should have been provided.
-
-IMPORTANT LINKS
-Listed below are the links to all important details about this project from the codes used to the visualizations created and more.
-
-GitHub - You can find all code files used to clean, analyze and visualize the data in this repository.
-
-RPubs - Every visualization created using RStudio’s ggplot2 package including the HTML documentation file can be found here.
-
-Tableau - The link to a well curated story for the visualizations created on Tableau.
-
-
-This concludes the article, thank you for your time and I hope it would be of great help to you!
-
-
 
 
 
