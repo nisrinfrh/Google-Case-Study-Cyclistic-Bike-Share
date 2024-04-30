@@ -1,9 +1,9 @@
 # Cyclistic Bike Share Analysis 
-cyclistic bike-share analysis case study is one of the capstone projects for the Google 
+Cyclistic bike-share analysis case study is one of the capstone projects for the Google 
 
 Data Analytics Professional Certificate which I completed in March2024.
 
-BACKGROUND
+## Introduction
 This project is based on data curated for a fictional bike-sharing company called Cyclistic. 
 
 The Company has more than 5,800 bicycles plus reclining bikes, hand tricycles and cargo bikes 
@@ -13,60 +13,63 @@ With over 600 docking stations to hold the bikes. The company has a flexible str
 Riders to unlock a bike from one station and return it to any other station anytime.
 
 
-Due to flexibility of its pricing plans, Cyclistic also has two types of riders;
+ Cyclistic  has two types of riders :-
 
 Casual Riders: Customers who purchase single-ride or full day passes.
 
-Cyclistic Members: Customers who purchase annual memberships.
+Members Riders : Customers who purchase annual memberships.
 
 
-**The following steps were used for this case study**
+** steps used for this case study**
 
 ***Ask → Prepare → Process → Analyze → Share → Actions***
 
 ## ASK
-The ask phase was where I identified the business task and considered the demands of the key stakeholders.
+
+These questions identified the business task and considered the demands of the key stakeholders:
+
+1-How do annual members and casual riders use Cyclistic bikes differently?
+
+2-Why would casual riders buy Cyclistic annual memberships?
+
+3-How can Cyclistic use digital media to influence casual riders to become members?
+
+In our project, we will focus on the first question.
 
 #### *BUSINES Task*
 
-Cyclistic bike share company based in Chicago,reccognizes the importance of increasing the number of annual
+Analyze the differences in bike usage Patterns between casual riders and annual members, and develop a new 
 
-Subscribers for its future success.To achieve this goal,this project aims
+Marketing strategy  aimed at  converting  casual riders in to annual subscribers.
 
-To analyze the differences in bike usage between casual riders and annual members and develop anew 
+led by lily Morenothe the Director of Marketing, and supported by Cyclistic's Markiting analytics team.
 
-Marketing strategy to convert casual riders in to annual subscribers.
+This project will collect analyze and report data to  inform the company's strategic marketing decisions. .
 
-led by lily Morenothe director of marketing, and supported by Cyclistic's markiting analytics team.
 
-This project will collect analyze and report data to guide the companys smarketing strategy.
+### Tools Used for Analysis
 
-and to solve the question:-
+I utilized the following tools for this case study:
 
-*How do annual members and casual riders use Cyclistic bikes differently?*
+**RStudio**: to clean, process, and analyze the data.
 
-### *Insights*
+**PowerBI**: to generate insightful visualizations from the analyzed data.
 
-The insights obtained from this case study will be used by the Cyclistic marketing analytics team to
+**GitHub**: to establish a repository for the utilized code and to create public links for the visuals produced, respectively.
 
-Design a new marketing strategy aimed at converting casual riders into annual members.
+These were the steps taken for data processing:
 
-### Tools used for Analysis
+**Limitations**
 
-I used the following tools for this case study;
+I had to remove some columns that were unnecessary for my analysis.
 
-**RStudio** to clean, process and analyze the data.
+I had to delete rows with negative values in the duration column.
 
-**PoweBi** to create meaningful visualizations from the analyzed data.
 
-**GitHub** to create a repository for the codes used and create a public link to the visuals created respectively.
-These are the steps taken for the processing of the data:
 
-***Limitations***
 
-I had to remove some columes i dont need in my analysis.
 
-Ihad to delete rows with negative values in duration column. 
+
 
 ## *Data Preparation*
 
