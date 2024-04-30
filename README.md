@@ -36,7 +36,7 @@ These questions identified the business task and considered the demands of the k
 
 In our project, we will focus on the first question.
 
-#### *BUSINES Task*
+ **BUSINES Task**
 
 Analyze the differences in bike usage Patterns between casual riders and annual members, and develop a new 
 
@@ -47,7 +47,7 @@ led by lily Morenothe the Director of Marketing, and supported by Cyclistic's Ma
 This project will collect analyze and report data to  inform the company's strategic marketing decisions. .
 
 
-### Tools Used for Analysis
+**Tools Used for Analysis**
 
 I utilized the following tools for this case study:
 
@@ -59,7 +59,7 @@ I utilized the following tools for this case study:
 
 These were the steps taken for data processing:
 
-**Limitations**
+ **Limitations**
 
 I had to remove some columns that were unnecessary for my analysis.
 
@@ -111,7 +111,7 @@ Next, I uploaded the trip datasets, which were in 12 CSV format files, to
 
 R using the ‘read_csv’ function. I then assigned each dataset a more consistent name for easier reference.
 
-The following steps outline the cleaning and manipulation process:-
+**The following steps outline the cleaning and manipulation process:-**
 
 ▪ Additional columns of data, such as day, month, and year, were added to provide additional
 
@@ -133,15 +133,17 @@ Maintain data integrity throughout the analysis.
 
 ## ANALYZE
 
-*The analysis was performed using RStudio*
+The analysis was performed using RStudio.
 
-After cleaning and properly formatting the data, I did a descriptive analysis on it. 
+After cleaning and properly formatting the data, I conducted a descriptive analysis.
 
-The new and clean version of the data frame contained a total of 3,776,042 rows with the annual members having 
+The new and clean version of the data frame contained a total of 3,776,042 rows, 
 
-76.7% of Cyclistic’s total customers while the casual members had only 23.3%.
+with annual members accounting for 68% of Cyclistic’s total customers,
 
- *CONDUCT DESCRIPTIVE ANALYSIS* on *ride_length (all figures in seconds)
+while casual members constituted only 38%.
+
+ *CONDUCT DESCRIPTIVE ANALYSIS* on *ride_length* (all figures in Minuts)
 
 #### Summary of ride_length:_
 
@@ -164,31 +166,28 @@ The new and clean version of the data frame contained a total of 3,776,042 rows 
 
 ![Screenshot (140)](https://github.com/nisrinfrh/google_project/assets/157531427/260c80c0-d095-4fb6-848f-e52a115660b4)
 
-## *SHARE*
-I created insightful visualizations of the data with PowerBi.
 
-For the presentation, I focus on the usage of the service by users according to their user category.
+## SHARE
 
+I created insightful visualizations of the data with Power BI.
 
- *pie chart* showing the Ride type distribution of the users:- 
+For the presentation, I focused on the usage of the service by users according to their user category.
 
+A pie chart showing the ride type distribution of the users:
 
 ![Screenshot (147)](https://github.com/nisrinfrh/google_project/assets/157531427/c705c0cb-a86e-4bc5-98d3-8cbdeac6e167)
 
 
- Then i followed by introducing a new column called *start_hour* that extracts the hour of the day when the users use the service. 
+Then I followed by introducing a new column called start_hour that extracts the hour of the day when the users use the service.
 
-This is an important insight because it could help the service providers know what time of day to do repairs or maintenance for their bikes 
+This is an important insight because it could help the service providers know what time of day to do repairs or
 
-with affecting their users negatively.
+Maintenance for their bikes without affecting their users negatively.
 
- *Line  chart*  to visulize most popular hour :-
+A line chart to visualize the most popular hour:
 
 
 ![Screenshot (153)](https://github.com/nisrinfrh/google_project/assets/157531427/c2366f20-d8ea-4ba4-95f8-2582bbeba717)
-
-
-
 
 
 Then  I looked at how each category of users uses the service per day of the week.   
