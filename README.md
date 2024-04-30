@@ -251,7 +251,13 @@ I also pointed out a few recommendations which will all be summarized below.
 
 **have expressed  interest in travel, outdoor sports, parks, museums.**
 
-*******************************************************
+
+**************************************************************************************************************
+
+This concludes my Google Data Analytics Capstone. I appreciate you taking the time to review my case study.
+
+Please feel free to share any comments or feedback, or reach out to me via email at nsrenfrh@gmail.com. Thank you!
+
 
 
 
