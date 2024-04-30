@@ -15,14 +15,14 @@ Riders to unlock a bike from one station and return it to any other station anyt
 
  Cyclistic  has two types of riders :-
 
-Casual Riders: Customers who purchase single-ride or full day passes.
+Casual Riders  : Customers who purchase single-ride or full day passes.
 
 Members Riders : Customers who purchase annual memberships.
 
 
-** steps used for this case study**
+**steps used for this case study**
 
-***Ask → Prepare → Process → Analyze → Share → Actions***
+***Ask  →  Prepare  →  Process  →  Analyze  →  Share  →  Actions***
 
 ## ASK
 
@@ -67,30 +67,19 @@ I had to delete rows with negative values in the duration column.
 
 
 
-
-
-
-
-## *Data Preparation*
-
-## *PREPARE*
+## PREPARE
 
 I Use Cyclistic’s historical trip data to analyze and identify trends. 
 
 I chose 2020 data  with 13 columns and 3527368  rows. 
 
- I create a document folder named Bike_share.
-
-12 CSV files of Divvy quarterly trips data are  located , stored and  organized in the above folder .
+12 CSV files of Divvy quarterly trips data are  located , stored and  organized in my computer .
 
  *licensing, privacy, security, and accessibility*
  
 The data has been made available by Motivate International Inc under this license (https://www.divvybikes.com/data-license-agreement.)
 
-
-#######  The 12 csv files were merged into a master data named *alltrips*#######
- 
-there  is no issues with bias or credibility in this data
+there  is no issues with bias or credibility in this data.
 
 **The data seems to fit the definition of ROCCC:-**
 
@@ -108,35 +97,41 @@ there  is no issues with bias or credibility in this data
 
   will enable me to answer the business questions.
 
-## *Data Processing*
+## PROCESS
 
-## **PROCESS**
+I used RStudio Desktop as the primary data processing tool for this analysis.
 
- Iused  RStudio Desktop  as the data processing tool.
+Firstly, I installed the necessary packages required for the analysis of these datasets.
 
-I installed the required packages for the analysis of these datasets. 
+This included the “tidyverse” package for data analysis and cleaning, “Lubridate” for
 
-The “tidyverse” package to analyze and clean the data.
+Handling date attributes, and “dplyr” for data manipulation.
 
-“Lubridate ‘’ for the date attributes and “dplyer” for cleaning .
+Next, I uploaded the trip datasets, which were in 12 CSV format files, to
 
-I uploaded trips datasets which are in 12 csv format to R using the ‘read_csv’ function.
+R using the ‘read_csv’ function. I then assigned each dataset a more consistent name for easier reference.
 
-And assigned them each to a more consistent name.
- 
- Following are the steps in cleaning and manipulating the data
- 
-- Add  additional columns of data such as day ,month and year that provide additional  opportunities to aggregate the data
+The following steps outline the cleaning and manipulation process:-
 
-- Combined all 12 csv files into one file named *alltrips*
+▪ Additional columns of data, such as day, month, and year, were added to provide additional
 
-- Add acalculated field for length of ride*ride_lenght*  and week_day since the data did not have the tripduration coulum.
+opportunities for data aggregation.
 
--  I deleted the negative “ride_length” and the “HQ QR” rows which is a representation of when bikes were out of circulation.
+▪ All 12 CSV files were combined into one file named "alltrips" for comprehensive analysis.
 
-  Since data is being removed, i reated a new version of the data frame “alltrips2”
+▪ A calculated field for the length of the ride (ride_length) and the weekday was added since
 
-## *ANALYZE*
+The original data did not have the trip duration column.
+
+▪ Negative values in the "ride_length" column and rows representing bikes out of circulation 
+
+(HQ QR) were deleted.
+
+▪ Given the removal of data, a new version of the data frame named “alltrips2” was created to
+
+Maintain data integrity throughout the analysis.
+
+## ANALYZE
 
 *The analysis was performed using RStudio*
 
