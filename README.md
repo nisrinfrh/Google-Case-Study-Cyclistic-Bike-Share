@@ -24,7 +24,7 @@ Members Riders : Customers who purchase annual memberships.
 
 ***Ask  →  Prepare  →  Process  →  Analyze  →  Share  →  Actions***
 
-# ASK  ❓❓❓❓
+# ASK
 
 These questions identified the business task and considered the demands of the key stakeholders:
 
@@ -67,7 +67,7 @@ I had to delete rows with negative values in the duration column.
 
 
 
-## PREPARE
+# PREPARE
 
 I Use Cyclistic’s historical trip data to analyze and identify trends. 
 
